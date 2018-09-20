@@ -82,7 +82,8 @@ The most important are:
 
 * **Separator**: The table cells in a CSV file can in principle be separated by any type of symbol as
   long as the file is consistent. The most common is comma (therby the name), but tab is also very
-  common, and you might also come across semicolon.
+  common, and you might also come across semicolon. Files separated by tabs sometimes use the file ending
+  `.tsv` rather than `.csv`, but this is by no means standardized.
 
 * **Escape character** or **text qualifier**: If there's an actual comma symbol (or whatever separator token you have)
   within a cell, that value must be "escaped" in some way so it's not interpreted as a separator.
@@ -105,12 +106,11 @@ In this case, the file was encoded as a legacy encoding called "Windows (ANSI)" 
 "[CP-1252](https://en.wikipedia.org/wiki/Windows-1252)", which is limited to the Latin alphabet
 with some extensions.
 
-In the next step of the import, you can select the delimiter and text qualifier.
-This is easier since there are fewer options, and Excel will preview the result.
+In the next step of the import, you have to select delimiter and text qualifier.
+This is easier since there are fewer options to choose from, and Excel will preview the result live.
 For the text qualifier setting, the default value is also usually the correct one.
 
 ![Correct delimiter during import](../fig/import-csv-delimiter.png)
-
 
 ## A Note on Cross-platform Operability
 (or, how typewriters are ruining your work)
