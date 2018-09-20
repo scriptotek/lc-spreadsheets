@@ -77,7 +77,8 @@ features like formatting (color, text style, etc.), merged cells, comments, figu
 
 ## Importing CSV files
 
-The CSV format comes with some flexibility that you need to be aware of when importing CSV files:
+The CSV format comes with some options that you need to be aware of when importing CSV files.
+The most important are:
 
 * **Separator**: The table cells in a CSV file can in principle be separated by any type of symbol as
   long as the file is consistent. The most common is comma (therby the name), but tab is also very
