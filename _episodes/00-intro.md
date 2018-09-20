@@ -5,7 +5,7 @@ exercises: 20
 questions:
   - What are your good and bad experiences in working with spreadsheets?
 objectives:
-  - 
+  - Overview of good spreadsheet usage and potential issues 
 keypoints:
   - We will discuss good practices for data entry, structuring and import/export
   - We will not discuss analysis or visualisation
