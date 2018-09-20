@@ -36,17 +36,15 @@ Spreadsheet usage is often useful and neccessary for librarians. We can use them
 
 ---
 
-### Spreadsheet outline
+### What these lesson will teach you
 
-In this lesson, we will look at:
 
 -¤¤FYLL INN HER NÅR OPPLEGGET ER FERDIG
 
 
-
 ---
 
-### What this lesson will not teach you
+### What these lesson will not teach you
 
 - How to do *plotting* i.e. charts and graphs in a spreadsheet
 - How to *write code* i.e. formulas and macros in spreadsheet programs
@@ -95,38 +93,26 @@ material as far as we are aware of them.
 
 ## Some problems with Spreadsheets
 
-Spreadsheets are **good for data entry**, and **viewing and visualizing data** but in reality we **tend to
-use spreadsheet programs for much more** than data entry. We use them
-to create data tables for publications, to generate summary
-statistics, and make figures.
+Spreadsheets are **good for data entry**, and **viewing data** but in reality we **tend to
+use spreadsheet programs for much more** than this.
 
-Generating **tables for reports** in a spreadsheet is not optimal -
-often, when formatting a data table for publication, we’re reporting
-key summary statistics in a way that is **not really meant to be read
-as data**, and often involves **special formatting** (merging cells,
-creating borders, making it pretty). We advise you to do this sort of
-operation within your document editing software.
+Often spreadsheets are used for generating **tables for reports** that are
+made for readability. Colors are used, border are added, cells are merged 
+and tables are spilt up. If you do this you risk making it difficult or downright
+impossible to do future work with the data, such as sorting and summarizing.
 
-The latter two applications, **generating statistics and figures**, should 
-be used with caution: because of the graphical, drag and drop nature of 
-spreadsheet programs, it can be very difficult, if not impossible, to 
-replicate your steps (much less retrace anyone else's), particularly if your 
-stats or figures require you to do more complex calculations. Furthermore, 
-in doing calculations in a spreadsheet, it’s easy to accidentally apply a 
-slightly different formula to multiple adjacent cells. When using a 
-command-line based statistics program like R or SAS, it’s practically 
-impossible to accidentally apply a calculation to one observation in your 
-dataset but not another unless you’re doing it on purpose. 
+A good routine is to keep the original data separate from the prettified data,
+for example having two sheets, one with the table of original data, and one sheet with
+the table of prettified data.
+
+
 
 ### Using Spreadsheets for Data Entry and Cleaning
 
 **HOWEVER**, there are circumstances where you might want to use a
 spreadsheet program to produce “quick and dirty” calculations or
 figures, and some of these features can be used in **data cleaning**,
-prior to importation into a statistical analysis program. We will show
-you how to use some features of spreadsheet programs to check your
-data quality along the way and produce preliminary summary statistics.
-
+prior to importation into a statistical analysis program for example. 
 
 In this lesson, we're going to talk about:
 
