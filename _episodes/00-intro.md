@@ -5,7 +5,7 @@ exercises: 20
 questions:
   - What are your good and bad experiences in working with spreadsheets?
 objectives:
-  - Overview of good spreadsheet usage and potential issues 
+  - Get an overview of good spreadsheet usage and potential issues 
 keypoints:
   - We will discuss good practices for data entry, structuring and import/export
   - We will not discuss analysis or visualisation
@@ -85,7 +85,7 @@ in many libraries, and often the data needs to be **tidied up** before export or
 Problems often arise when spreadsheets are used for generating **tables for reports** that are
 made for readability. Colors are used, border are added, cells are merged 
 and tables are spilt up. Changes like these are not only cosmetic, they
-can make it **difficult or downright impossible** to do future work with the data,
+can make it **difficult or downright impossible** to do future work on the data,
 such as sorting and summarizing.
 
 A good routine is to keep the original data separate from the prettified data,
@@ -97,6 +97,8 @@ the table of prettified data:
 Optionally you can use word processors like Word to make pretty tables and use Excel for organizing the data.
 
 We also recommend that you keep track of important things you did to the original data in a separate sheet, for example noting if you found some great recipe for tidying up some data or if you reorganized the data in an complex or major way.
+
+
 
 ---
 
