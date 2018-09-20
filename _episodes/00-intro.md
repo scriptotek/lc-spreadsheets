@@ -76,12 +76,13 @@ material as far as we are aware of them.
 
 ---
 
-## Some problems with Spreadsheets and good routines
+## Common usages and problems with spreadsheets
 
-Spreadsheets are **good for data entry**, and **viewing data** but in reality we **tend to
-use spreadsheet programs for much more** than this.
+Spreadsheets are very useful for **data entry**, and **viewing data.**
+**Importing and exporting data** with spreadsheet programs is commonly routine
+in many libraries, and often the data needs to be **tidied up** before export or after import.
 
-Often spreadsheets are used for generating **tables for reports** that are
+Problems often arise when spreadsheets are used for generating **tables for reports** that are
 made for readability. Colors are used, border are added, cells are merged 
 and tables are spilt up. Changes like these are not only cosmetic, they
 **can make it difficult or downright impossible** to do future work with the data,
@@ -91,11 +92,11 @@ A good routine is to keep the original data separate from the prettified data,
 for example having two sheets, one with the table of original data, and one sheet with
 the table of prettified data:
 
-![alt text](/lc-spreadsheets/fig/00-intro_raw_data.png "Original (raw) data in Excel table") ![alt text](/lc-spreadsheets/fig/00-intro_pretty_data.png "Prettified data in Excel table")
+![alt text](/lc-spreadsheets/fig/00-intro_raw_data.png "Original (raw) data in Excel table")       ![alt text](/lc-spreadsheets/fig/00-intro_pretty_data.png "Prettified data in Excel table")
 
 Optionally you can use word processors like Word to make pretty tables and use Excel for organizing the data.
 
-It is also highly recommended that you keep track of important things you did to the data in a separate sheet, for example noting if you found some great recipe for tidying up some data or if you reorganized the original data in an complex or major way.
+We also recommend that you keep track of important things you did to the original data in a separate sheet, for example noting if you found some great recipe for tidying up some data or if you reorganized the original data in an complex or major way.
 
 ## In this lesson, we're going to talk about:
 
