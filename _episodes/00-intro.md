@@ -93,7 +93,7 @@ A good routine is to keep the original data separate from the prettified data,
 for example having two sheets, one with the table of original data, and one sheet with
 the table of prettified data:
 
-<kbd>![alt text](/lc-spreadsheets/fig/00-intro_raw_data.png "Original (raw) data in Excel table")</kbd> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<kbd><![alt text](/lc-spreadsheets/fig/00-intro_pretty_data.png "Prettified data in Excel table")</kbd>
+|![alt text](/lc-spreadsheets/fig/00-intro_raw_data.png "Original (raw) data in Excel table")|![alt text](/lc-spreadsheets/fig/00-intro_pretty_data.png "Prettified data in Excel table")|
 
 Optionally you can use word processors like Word to make pretty tables and use Excel for organizing the data.
 
