@@ -76,6 +76,38 @@ material as far as we are aware of them.
 
 ---
 
+## Some problems with Spreadsheets and good routines
+
+Spreadsheets are **good for data entry**, and **viewing data** but in reality we **tend to
+use spreadsheet programs for much more** than this.
+
+Often spreadsheets are used for generating **tables for reports** that are
+made for readability. Colors are used, border are added, cells are merged 
+and tables are spilt up. Changes like these are not only cosmetic, they
+**can make it difficult or downright impossible** to do future work with the data,
+such as sorting and summarizing.
+
+A good routine is to keep the original data separate from the prettified data,
+for example having two sheets, one with the table of original data, and one sheet with
+the table of prettified data:
+
+![alt text](/lc-spreadsheets/fig/00-intro_raw_data.png "Original (raw) data in Excel table") ![alt text](/lc-spreadsheets/fig/00-intro_pretty_data.png "Prettified data in Excel table")
+
+Optionally you can use word processors like Word to make pretty tables and use Excel for organizing the data.
+
+It is also highly recommended that you keep track of important things you did to the data in a separate sheet, for example noting if you found some great recipe for tidying up some data or if you reorganized the original data in an complex or major way.
+
+## In this lesson, we're going to talk about:
+
+1. [Formatting data tables in spreadsheets](../01-format-data)
+2. [Formatting problems](../02-common-mistakes)
+3. [Dates as data](../03-dates-as-data)
+4. [Basic quality control and data manipulation in spreadsheets](../04-quality-control)
+5. [Exporting data from spreadsheets](../05-exporting-data)
+6. [Data export formats caveats](../06-data-formats-caveats)
+
+---
+
 > ## Questions:
 >
 > Discuss with your neighbour:
@@ -89,37 +121,3 @@ material as far as we are aware of them.
 > - Where do you go to find help? Internet, colleague, IT-department, niece? 
 {: .challenge}
 
----
-
-## Some problems with Spreadsheets
-
-Spreadsheets are **good for data entry**, and **viewing data** but in reality we **tend to
-use spreadsheet programs for much more** than this.
-
-Often spreadsheets are used for generating **tables for reports** that are
-made for readability. Colors are used, border are added, cells are merged 
-and tables are spilt up. If you do this you risk making it difficult or downright
-impossible to do future work with the data, such as sorting and summarizing.
-
-A good routine is to keep the original data separate from the prettified data,
-for example having two sheets, one with the table of original data, and one sheet with
-the table of prettified data.
-
-![alt text](/lc-spreadsheets/fig/00-intro_raw_data.png "Original (raw) data in Excel table")
-
-
-### Using Spreadsheets for Data Entry and Cleaning
-
-**HOWEVER**, there are circumstances where you might want to use a
-spreadsheet program to produce “quick and dirty” calculations or
-figures, and some of these features can be used in **data cleaning**,
-prior to importation into a statistical analysis program for example. 
-
-In this lesson, we're going to talk about:
-
-1. [Formatting data tables in spreadsheets](../01-format-data)
-2. [Formatting problems](../02-common-mistakes)
-3. [Dates as data](../03-dates-as-data)
-4. [Basic quality control and data manipulation in spreadsheets](../04-quality-control)
-5. [Exporting data from spreadsheets](../05-exporting-data)
-6. [Data export formats caveats](../06-data-formats-caveats)
