@@ -25,20 +25,14 @@ contributors:
   - Ben Marwick
 ---
 
-Good **data organization** is the foundation of much of our day-to-day
-work in libraries. Most **librarians** have data or do data entry in
-spreadsheets. Spreadsheet programs are very **useful graphical
-interfaces** for designing data tables and handling very basic data
-quality control functions.
 
-Spreadsheets encompass a lot of the things we need
-to be able to do as librarians. We can use them for:
+Spreadsheet usage is often useful and neccessary for librarians. We can use them for:
 
-- Data entry
-- Organizing data
-- Subsetting and sorting data
-- Statistics
-- Plotting
+- Viewing data
+- Storing data
+- Organizing data (categorizing and sorting)
+- Visualizing data (charts and graphs)
+- Importing and exporting data
 
 ---
 
@@ -46,42 +40,22 @@ to be able to do as librarians. We can use them for:
 
 In this lesson, we will look at:
 
-- Good data entry practices - formatting data tables in spreadsheets
-- How to avoid common formatting mistakes
-- Dates as data - beware!
-- Basic quality control and data manipulation in spreadsheets
-- Exporting data from spreadsheets
+-¤¤FYLL INN HER NÅR OPPLEGGET ER FERDIG
 
-
-**Much of your time when you're producing a report will be spent in
-this 'data wrangling' stage.** It's not the most fun, but it's
-necessary. We'll teach you how to think about data organization and
-some practices for more effective data wrangling.
 
 
 ---
 
 ### What this lesson will not teach you
 
+- How to do *plotting* i.e. charts and graphs in a spreadsheet
+- How to *write code* i.e. formulas and macros in spreadsheet programs
 - How to do *statistics* in a spreadsheet
-- How to do *plotting* in a spreadsheet
-- How to *write code* in spreadsheet programs
 
-If you're looking to do this, a good reference is
+These topics are outside of the scope of this lesson, if you're looking to do this, a good reference is
 [Head First Excel by O'Reilly Media](https://www.amazon.com/Head-First-Excel-learners-spreadsheets/dp/0596807694).
 
 ---
-
-### Why aren't we teaching data analysis in spreadsheets
-
-- Data analysis in spreadsheets usually requires **a lot of manual
-  work**. If you want to change a parameter or run an analysis with a
-  new dataset, you usually have to redo everything by hand. (We do
-  know that you can create macros, but see the next point.)
-
-- It is also difficult to **track or reproduce statistical or plotting
-  analyses** done in spreadsheet programs when you want to go back to
-  your work or someone asks for details of your analysis.
 
 
 ### Spreadsheet programs
@@ -98,33 +72,30 @@ In this lesson, we will assume that you are most likely using Excel as
 your primary spreadsheet program - there are others (gnumeric, Calc
 from OpenOffice), and their functionality is similar, but Excel is the
 package you're most likely to have available on your work computer.
+A few of the menu commands we use are excel specific, so bear that in mind if you aim
+to use another spreadsheet program. We will indicate these in the lesson 
+material as far as we are aware of them.
 
 ---
 
 > ## Questions:
 >
-> - How many people have used spreadsheets in their work?
-> - What kind of operations do you do in spreadsheets?
-> - Which ones do you think spreadsheets are good for?
-{: .challenge}
-
-
----
-
-> ## Questions
-> 
-> - Spreadsheets can be very useful, but they can also be frustrating
->   and even sometimes give us incorrect results.
-> 
-> - What are some things that you've accidentally done in a
->   spreadsheet, or have been frustrated that you can't do easily?
+> Discuss with your neighbour:
+>
+> - What kind of work do you do in spreadsheets?
+>   Try to discuss some practical examples where you structure data (sorting, filtering etc) in your work.
+> - Have there been any smart discoveries you have made to save work time with spreadsheets?
+> - What do you find frustating and what do want to get done better or faster?
+> - Do you find it easy or hard to reverse something you did wrong?
+> - Is it easy for you to find good information about your spreadsheet program where you work?
+> - Where do you go to find help? Internet, colleague, IT-department, niece? 
 {: .challenge}
 
 ---
 
-## Problems with Spreadsheets
+## Some problems with Spreadsheets
 
-Spreadsheets are **good for data entry**, but in reality we **tend to
+Spreadsheets are **good for data entry**, and **viewing and visualizing data** but in reality we **tend to
 use spreadsheet programs for much more** than data entry. We use them
 to create data tables for publications, to generate summary
 statistics, and make figures.
