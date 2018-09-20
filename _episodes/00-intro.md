@@ -105,7 +105,7 @@ A good routine is to keep the original data separate from the prettified data,
 for example having two sheets, one with the table of original data, and one sheet with
 the table of prettified data.
 
-![alt text](lc-spreadsheets/fig/00-intro_raw_data.png "Original (raw) data in Excel table")
+![alt text](/lc-spreadsheets/fig/00-intro_raw_data.png "Original (raw) data in Excel table")
 
 
 ### Using Spreadsheets for Data Entry and Cleaning
