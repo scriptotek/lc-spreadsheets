@@ -35,8 +35,7 @@ By default, Excel, stores spreadsheet data in the Excel file format
   and what have you. This is worth spelling out, since it's what makes *spreadsheets* different
   from *data tables*.
 
-- The format is *proprietary* and its development is linked to a specific piece of
-  (non-free) software (Excel).
+- It is *proprietary* and its development is linked to a specific piece of (non-free) software (Excel).
   Proprietary formats often tie you to a specific (expensive) software and also introduce the risk that the format can no longer be read if the specific software ceases to exist (think 5, 10, 20 years into the future).
   - This is less of an issue with the Excel format than many other proprietary
     formats because the ubiquity of Excel has led to good third-party support
@@ -44,10 +43,13 @@ By default, Excel, stores spreadsheet data in the Excel file format
     There's no shortage of *free* and *open* software that supports the format.
     Not all implementations support all features of the format though.
 
-- The format changes over time together with the software itself.
+- It *comes in many different versions*.
+  As the software is developed over time, so is the format.
   Different versions of Excel may handle data differently, leading to inconsistencies.
 
-- It's a *very complex* file format. This is an issue that is often overlooked,
+  - Do you remember how we talked about how Excel stores **dates** earlier? Turns out there are **multiple defaults for different versions of the software**. And you can switch between them all willy-nilly. So, say you’re compiling Excel-stored data from multiple sources. There’s dates in each file- Excel interprets them as their own internally consistent serial numbers. When you combine the data, Excel will take the serial number from the place you’re importing it from, and interpret it using the rule set for the version of Excel you’re using. Essentially, you could be adding a huge error to your data, and it wouldn’t necessarily be flagged by any data cleaning methods if your ranges overlap.
+
+- It's a *very complex* format. This is an issue that is often overlooked,
   but for long-term storage it's imporant to keep in mind.
   The more flexible and complex a file format is, the more things can go wrong,
   and thus the greater the chance that something actually does go wrong.
@@ -57,8 +59,6 @@ By default, Excel, stores spreadsheet data in the Excel file format
     with the files. Not something you have to worry about on your everyday spreadsheet,
     but for large datasets or automated data processing, it can be a reason to choose
     an alternative.
-
-- Do you remember how we talked about how Excel stores **dates** earlier? Turns out there are **multiple defaults for different versions of the software**. And you can switch between them all willy-nilly. So, say you’re compiling Excel-stored data from multiple sources. There’s dates in each file- Excel interprets them as their own internally consistent serial numbers. When you combine the data, Excel will take the serial number from the place you’re importing it from, and interpret it using the rule set for the version of Excel you’re using. Essentially, you could be adding a huge error to your data, and it wouldn’t necessarily be flagged by any data cleaning methods if your ranges overlap.
 
 <!-- - Finally, more **journals and grant agencies** are requiring you -->
 <!--   to deposit your data in a data repository, and most of them **don't -->
