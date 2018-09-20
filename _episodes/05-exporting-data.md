@@ -37,12 +37,10 @@ By default, Excel, stores spreadsheet data in the Excel file format
 
 - The format is *proprietary* and its development is linked to a specific piece of
   (non-free) software (Excel).
-  - In general this is a bad thing, since it might tie you to the specific piece of software.
-    Which also might not be available 5, 10, 20 years from now.  
-  - It's less of an issue with the Excel format than many other proprietary
-    formats – the ubiquity of Excel has led to good third-party support
-    for the format, and there's no shortage of *free* and *open* software that
-    supports the format.
+  - This is less of an issue with the Excel format than many other proprietary
+    formats because the ubiquity of Excel has led to good third-party support
+    for the format.
+    There's no shortage of *free* and *open* software that supports the format.
     Not all implementations support all features of the format though.
 
 - The format changes over time together with the software itself.
