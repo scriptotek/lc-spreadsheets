@@ -92,20 +92,11 @@ A good routine is to keep the original data separate from the prettified data,
 for example having two sheets, one with the table of original data, and one sheet with
 the table of prettified data:
 
-![alt text](/lc-spreadsheets/fig/00-intro_raw_data.png "Original (raw) data in Excel table")       ![alt text](/lc-spreadsheets/fig/00-intro_pretty_data.png "Prettified data in Excel table")
+![alt text](/lc-spreadsheets/fig/00-intro_raw_data.png "Original (raw) data in Excel table") &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ![alt text](/lc-spreadsheets/fig/00-intro_pretty_data.png "Prettified data in Excel table")
 
 Optionally you can use word processors like Word to make pretty tables and use Excel for organizing the data.
 
-We also recommend that you keep track of important things you did to the original data in a separate sheet, for example noting if you found some great recipe for tidying up some data or if you reorganized the original data in an complex or major way.
-
-## In this lesson, we're going to talk about:
-
-1. [Formatting data tables in spreadsheets](../01-format-data)
-2. [Formatting problems](../02-common-mistakes)
-3. [Dates as data](../03-dates-as-data)
-4. [Basic quality control and data manipulation in spreadsheets](../04-quality-control)
-5. [Exporting data from spreadsheets](../05-exporting-data)
-6. [Data export formats caveats](../06-data-formats-caveats)
+We also recommend that you keep track of important things you did to the original data in a separate sheet, for example noting if you found some great recipe for tidying up some data or if you reorganized the data in an complex or major way.
 
 ---
 
@@ -122,3 +113,13 @@ We also recommend that you keep track of important things you did to the origina
 > - Where do you go to find help? Internet, colleague, IT-department, niece? 
 {: .challenge}
 
+---
+
+## In this lesson, we're going to talk about:
+
+1. [Formatting data tables in spreadsheets](../01-format-data)
+2. [Formatting problems](../02-common-mistakes)
+3. [Dates as data](../03-dates-as-data)
+4. [Basic quality control and data manipulation in spreadsheets](../04-quality-control)
+5. [Exporting data from spreadsheets](../05-exporting-data)
+6. [Data export formats caveats](../06-data-formats-caveats)
