@@ -3,12 +3,13 @@ title: Using spreadsheet programs for data wrangling
 teaching: 10
 exercises: 20
 questions:
-  - What are good data practices?
+  - What are your good and bad experiences in working with spreadsheets?
 objectives:
   - 
 keypoints:
-  - We will discuss good practices for data entry and formatting
+  - We will discuss good practices for data entry, structuring and import/export
   - We will not discuss analysis or visualisation
+
 
 authors:
   - Jez Cope
@@ -92,7 +93,7 @@ A good routine is to keep the original data separate from the prettified data,
 for example having two sheets, one with the table of original data, and one sheet with
 the table of prettified data:
 
-<kbd>![alt text](/lc-spreadsheets/fig/00-intro_raw_data.png "Original (raw) data in Excel table")</kbd> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<kbd><![alt text](/lc-spreadsheets/fig/00-intro_pretty_data.png "Prettified data in Excel table")</kbd>
+<kbd>![alt text](/lc-spreadsheets/fig/00-intro_raw_data.png "Original (raw) data in Excel table")</kbd> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<kbd><![alt text](/lc-spreadsheets/fig/00-intro_pretty_data.png "Prettified data in Excel table")</kbd>
 
 Optionally you can use word processors like Word to make pretty tables and use Excel for organizing the data.
 
