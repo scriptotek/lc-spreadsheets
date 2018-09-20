@@ -90,10 +90,16 @@ The cardinal rules of using spreadsheet programs for data:
    most data repositories.
 
 
-|Last Name|First Name|Position  ||Title          |Callcode|Collection|
-|---------|----------|----------|---|---------------|--------|----------|
-|Olsen    |Mark      |Undergrad ||Brave New World|45a/45  |SciFiColl |
-|Jameston |Donna     |Phd       ||Utopia         |45a/46  |SCifiColl | 
+|Last Name|First Name|Position  |Birtdate  |
+|---------|----------|----------|----------|
+|Olsen    |Mark      |Undergrad |05.06.1999|
+|Jameston |Donna     |Phd       |04.08.1985|
+
+
+|Title            |Callcode|Collection|Library                |Location|
+|-----------------|--------|----------|-----------------------|--------|
+|Brave New World  |Hux:Bra |SciFiColl |University Library Oslo|Science Library|
+|War of the Worlds|Wel:War |SCifiColl |University Library Oslo|Informatics library|
 
 
 For instance, we have data from a survey of small mammals in a desert
