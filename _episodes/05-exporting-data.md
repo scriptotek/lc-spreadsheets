@@ -39,14 +39,18 @@ for **publishing/sharing** your data, there's some reasons to consider alternati
     good support for the format.
 
 - The format changes over time together with the software itself.
-  Different versions of Excel may handle data differently, leading to inconsistencies.
+  Different versions of Excel may handle data differently, leading to inconsistencies. 
 
 - It's a *very complex* file format. This is an issue that is often overlooked,
   but for long-term storage it's imporant to keep in mind.
-  The more flexible and complex a file format is, the more options a format a format provides,
-  the greater the chance that *something* goes wrong today or in 5, 10, 20 years.
-  The *complexitity* issue is not only an issue with the Excel format, but also the
-  Open Document Format (ODF).
+  The more flexible and complex a file format is, the more things can go wrong,
+  and thus the greater the chance that something actually does go wrong.
+  - The *complexitity* issue is not only an issue with the Excel format, but also the
+    Open Document Format (ODF).
+  - More complexity also means that more processing power and memory is needed to work
+    with the files. Not something you have to worry about on your everyday spreadsheet,
+    but for large datasets or automated data processing, it can be a reason to choose
+    an alternative.
 
 <!-- - Finally, more **journals and grant agencies** are requiring you -->
 <!--   to deposit your data in a data repository, and most of them **don't -->
