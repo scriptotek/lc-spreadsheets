@@ -96,10 +96,6 @@ the table of prettified data:
 
 Optionally you can use word processors like Word to make pretty tables and use Excel for organizing the data.
 
-We also recommend that you keep track of important things you did to the original data in a separate sheet, for example noting if you found some great recipe for tidying up some data or if you reorganized the data in an complex or major way.
-
-
-
 ---
 
 > ## Questions:
