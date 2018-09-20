@@ -115,10 +115,14 @@ All spreadsheet programs can save to CSV, but they differ a bit in how well they
 ![Saving an Excel file to CSV](../fig/excel-to-csv.png)
 
 Warning: Excel does not give you the option to choose character encoding, but instead selects
-a legacy character encoding based on which language you'r system is using.
-Before sharing a CSV file from Excel you should convert it to Unicode (UTF-8) – this can be
+a legacy character encoding based on which system and language you'r using.
+Before sharing a CSV file from Excel, you should convert it to Unicode (UTF-8) – this can be
 done in a text editor like Notepad++.
-Or export CSV from LibreOffice or Google Sheets instead.
+
+Oddly enough, the Mac version of Excel provides a separate option in the file format menu
+called "CSV UTF-8 (Comma delimited)", but this is not available in the Windows version.
+
+CSV export is more straightforward from LibreOffice or Google Sheets.
 LibreOffice provides you with all the options you need, while Google Sheets just use sensible defaults.
 
 ## Importing CSV files
