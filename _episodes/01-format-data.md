@@ -65,15 +65,11 @@ what you did when your leadership team ask for a different analysis,
 - **create a new file or tab with your cleaned or analyzed data.** Do
   not modify that original dataset, or you will never know where you
   started!
-- **keep track of the steps you took in your clean up or analysis.**
-  You should track these steps as a scientist would each step in an
-  experiment. You can do this in another text file, or a good option
-  is to create a new tab in your spreadsheet with your notes. This way
-  the notes and data stay together.
-
-This might be an example of a spreadsheet setup:
-
-![spreadsheet setup](../fig/spreadsheet-setup.png)
+- **keep track of the steps you took in your clean up or analysis.**  
+  We recommend that you keep track of important things you did to the  
+  original data in a separate sheet, for example noting if you used  
+  some great recipe for tidying up data or if you reorganized the data  
+  in an complex or major way.
 
 Put these principles in to practice today during your Exercises. 
 
