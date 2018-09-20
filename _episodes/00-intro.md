@@ -37,7 +37,7 @@ Spreadsheet usage is often useful and neccessary for librarians. We can use them
 
 ---
 
-### What these lesson will teach you
+### What these lessons will teach you
 
 
 -¤¤FYLL INN HER NÅR OPPLEGGET ER FERDIG
@@ -45,13 +45,13 @@ Spreadsheet usage is often useful and neccessary for librarians. We can use them
 
 ---
 
-### What these lesson will not teach you
+### What these lessons will not teach you
 
 - How to do *plotting* i.e. charts and graphs in a spreadsheet
 - How to *write code* i.e. formulas and macros in spreadsheet programs
 - How to do *statistics* in a spreadsheet
 
-These topics are outside of the scope of this lesson, if you're looking to do this, a good reference is
+These topics are outside of the scope of these lessons, if you're looking to do this, a good reference is
 [Head First Excel by O'Reilly Media](https://www.amazon.com/Head-First-Excel-learners-spreadsheets/dp/0596807694).
 
 ---
@@ -59,8 +59,7 @@ These topics are outside of the scope of this lesson, if you're looking to do th
 
 ### Spreadsheet programs
 
-Commands may differ a bit between programs, but the general idea
-is the same.
+Commands may differ a bit between programs, but the general idea is the same.
 
 - LibreOffice
 - Microsoft Excel
@@ -71,7 +70,7 @@ In this lesson, we will assume that you are most likely using Excel as
 your primary spreadsheet program - there are others (gnumeric, Calc
 from OpenOffice), and their functionality is similar, but Excel is the
 package you're most likely to have available on your work computer.
-A few of the menu commands we use are excel specific, so bear that in mind if you aim
+A few of the menu commands we use are **excel specific**, so bear that in mind if you aim
 to use another spreadsheet program. We will indicate these in the lesson 
 material as far as we are aware of them.
 
@@ -86,11 +85,11 @@ in many libraries, and often the data needs to be **tidied up** before export or
 Problems often arise when spreadsheets are used for generating **tables for reports** that are
 made for readability. Colors are used, border are added, cells are merged 
 and tables are spilt up. Changes like these are not only cosmetic, they
-**can make it difficult or downright impossible** to do future work with the data,
+can make it **difficult or downright impossible** to do future work with the data,
 such as sorting and summarizing.
 
 A good routine is to keep the original data separate from the prettified data,
-for example having two sheets, one with the table of original data, and one sheet with
+for example having two sheets, one with the table of original (raw) data, and one sheet with
 the table of prettified data:
 
 |![alt text](/lc-spreadsheets/fig/00-intro_raw_data.png "Original (raw) data in Excel table")|![alt text](/lc-spreadsheets/fig/00-intro_pretty_data.png "Prettified data in Excel table")|
