@@ -37,6 +37,7 @@ By default, Excel, stores spreadsheet data in the Excel file format
 
 - The format is *proprietary* and its development is linked to a specific piece of
   (non-free) software (Excel).
+  Proprietary formats often tie you to a specific software and introduce the risk that the format can no longer be read if the specific software ceases to exist (think 5, 10, 20 years into the future).
   - This is less of an issue with the Excel format than many other proprietary
     formats because the ubiquity of Excel has led to good third-party support
     for the format.
