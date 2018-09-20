@@ -78,8 +78,8 @@ material as far as we are aware of them.
 
 ## Common usages and problems with spreadsheets
 
-Spreadsheets are very useful for **data entry**, and **viewing data.**
-**Importing and exporting data** with spreadsheet programs is commonly routine
+Spreadsheets are very useful for **data entry**, and **viewing data.**  
+**Importing and exporting data** with spreadsheet programs is common routine
 in many libraries, and often the data needs to be **tidied up** before export or after import.
 
 Problems often arise when spreadsheets are used for generating **tables for reports** that are
