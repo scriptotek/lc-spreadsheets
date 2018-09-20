@@ -1,15 +1,16 @@
 ---
-title: Exporting data from spreadsheets
-teaching: 10
-exercises: 0
+title: Importing and exporting data
+teaching: 15
+exercises: 15
 questions:
   - What problems are there with Excel files?
   - How can these problems be solved?
 objectives:
   - Store spreadsheet data in universal file formats.
   - Export data from a spreadsheet to a .csv file.
+  - Import data from .csv files.
 keypoints:
-  - Use .csv file format for data storage and processing
+  - Use the CSV file format for data storage and exchange
 
 authors:
   # - Jez Cope
@@ -24,24 +25,28 @@ contributors:
   - Ben Marwick
 ---
 
+## Exporting data as CSV
 
-Storing the data you're going to work with for your analyses in Excel
-default file format (`*.xls` or `*.xlsx` - depending on the Excel
-version) is a **bad idea**. Why?
+The default Excel file format (`*.xls` or `*.xlsx` - depending on the Excel
+version) works well in many cases, but for **archiving/long-term storage** or
+for **publishing/sharing** your data, there's some reasons to consider alternatives:
 
-- Because it is a **proprietary format**, and it is possible that in
-  the future, technology won’t exist (or will become sufficiently
-  rare) to make it inconvenient, if not impossible, to open the file.
+- The Excel format is a *proprietary format*, linked to a specific piece of (non-free)
+  software (Excel). Other software may not be able to open the files correctly.
+  - This is less of an issue with Excel files than many other proprietary
+    formats though. The ubiquity of Excel has led to good third-party support
+    for the format, and there's no shortage of *free* and *open* software with
+    good support for the format.
 
-  Think about zipdisks. How many old theses in your lab are “backed
-  up” and stored on zipdisks? Ever wanted to pull out the raw data
-  from one of those? *Exactly.*
+- The format changes over time together with the software itself.
+  Different versions of Excel may handle data differently, leading to inconsistencies.
 
-- **Other spreadsheet software** may not be able to open files
-  saved in a proprietary Excel format.
-
-- **Different versions of Excel** may handle data
-  differently, leading to inconsistencies.
+- It's a *very complex* file format. This is an issue that is often overlooked,
+  but for long-term storage it's imporant to keep in mind.
+  The more flexible and complex a file format is, the more options a format a format provides,
+  the greater the chance that *something* goes wrong today or in 5, 10, 20 years.
+  The *complexitity* issue is not only an issue with the Excel format, but also the
+  Open Document Format (ODF).
 
 <!-- - Finally, more **journals and grant agencies** are requiring you -->
 <!--   to deposit your data in a data repository, and most of them **don't -->
@@ -50,9 +55,9 @@ version) is a **bad idea**. Why?
 
 As an example, do you remember how we talked about how Excel stores **dates** earlier? Turns out there are **multiple defaults for different versions of the software**. And you can switch between them all willy-nilly. So, say you’re compiling Excel-stored data from multiple sources. There’s dates in each file- Excel interprets them as their own internally consistent serial numbers. When you combine the data, Excel will take the serial number from the place you’re importing it from, and interpret it using the rule set for the version of Excel you’re using. Essentially, you could be adding a huge error to your data, and it wouldn’t necessarily be flagged by any data cleaning methods if your ranges overlap.
 
-Storing data in a **universal**, **open**, **static format** will help deal with this problem. Try **tab-delimited** or **CSV** (more common). CSV files are plain text files where the columns are separated by commas, hence 'comma separated variables' or CSV. The advantage of a CSV over an Excel/SPSS/etc. file is that we can open and read a CSV file using just about any software, including a simple **text editor**. Data in a CSV can also be **easily imported** into other formats and environments, such as SQLite and R. We're not tied to a certain version of a certain expensive program when we work with CSV, so it's a good format to work with for maximum portability and endurance. Most spreadsheet programs can save to delimited text formats like CSV easily, although they complain and make you feel like you’re doing something wrong along the way.
+Storing data in a **universal**, **open**, **static format** will help deal with this problem. Try **tab-delimited** or **CSV** (more common). CSV files are plain text files where the columns are separated by commas, hence 'comma separated variables' or CSV. The advantage of a CSV over an Excel/SPSS/etc. file is that we can open and read a CSV file using just about any software, including a simple **text editor**. Data in a CSV can also be **easily imported** into other formats and environments, such as SQLite and R. We're not tied to a certain version of a certain expensive program when we work with CSV, so it's a good format to work with for maximum portability and endurance. Most spreadsheet programs can save to delimited text formats like CSV easily.
 
-To save a file you have opened in Excel in `*.csv` format:
+To save a spreadsheet as CSV:
 
 1. From the top menu select 'File' and 'Save as'.
 2. In the 'Format' field, from the list, select 'Comma Separated Values' (`*.csv`).
@@ -60,7 +65,15 @@ To save a file you have opened in Excel in `*.csv` format:
 
 ![Saving an Excel file to CSV](../fig/excel-to-csv.png)
 
-An important note for backwards compatibility: you can open CSVs in Excel!
+### Sometimes CSV is too simple
+
+When it comes to data exchange and long-term storage, simplicity is king and CSV is perfect! 
+For other use cases, the CSV format might be too simple though. The CSV format do not support
+features like formatting (color, text style, etc.), merged cells, comments, figures, formulas, etc.
+
+## Importing CSV files
+
+TODO
 
 ## A Note on Cross-platform Operability
 (or, how typewriters are ruining your work)
