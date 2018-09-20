@@ -89,15 +89,18 @@ The cardinal rules of using spreadsheet programs for data:
    ensures that anyone can use the data, and is the format required by
    most data repositories.
 
-|Last Name|FirstName|Position  |
-|---------|---------|----------|
-|Olsen    |Mark     |Undergrad |
-|Jamestown|Donna    |Ph        |
+
+|Last Name|First Name|Position  |
+|---------|----------|----------|
+|Olsen    |Mark      |Undergrad |
+|Jamestown|Donna     |Phd       |  
+
 
 |Title          |Callcode|Collection|
 |---------------|--------|----------|
 |Brave New World|45a/45  |SciFiColl |
-|Utopia         |45a/46  |SCifiColl |
+|Utopia         |45a/46  |SCifiColl |  
+
 
 For instance, we have data from a survey of small mammals in a desert
 ecosystem. Different people have gone to the field and entered data in
