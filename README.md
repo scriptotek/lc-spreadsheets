@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.com/scriptotek/lc-spreadsheets.svg?branch=gh-pages)](https://travis-ci.com/scriptotek/lc-spreadsheets)
+
 # Library Carpentry
 
 The Library Carpentry module '[Tidy data for librarians](http://jezcope.github.io/library-spreadsheets/)' is maintained by Jez Cope.
