@@ -112,6 +112,14 @@ For the text qualifier setting, the default value is also usually the correct on
 
 ![Correct delimiter during import](../fig/import-csv-delimiter.png)
 
+> ## Challenge: Importing a CSV file ##
+> 
+> 1. Download the CSV file with a list of all countries from DataHub: https://datahub.io/core/country-list (look for "csv" under "Download")
+> 2. Import the file into Excel.
+> 
+{: .challenge}
+
+
 ## A Note on Cross-platform Operability
 (or, how typewriters are ruining your work)
 
