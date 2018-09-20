@@ -25,21 +25,28 @@ contributors:
   - Ben Marwick
 ---
 
-## Exporting data as CSV
+## The Excel file format
 
-The default Excel file format (`*.xls` or `*.xlsx` - depending on the Excel
-version) works well in many cases, but for **archiving/long-term storage** or
-for **publishing/sharing** your data, there's some reasons to consider alternatives:
+By default, Excel, stores spreadsheet data in the Excel file format
+(`*.xls` or `*.xlsx` - depending on the Excel version).
 
-- The Excel format is a *proprietary format*, linked to a specific piece of (non-free)
-  software (Excel). Other software may not be able to open the files correctly.
-  - This is less of an issue with Excel files than many other proprietary
-    formats though. The ubiquity of Excel has led to good third-party support
-    for the format, and there's no shortage of *free* and *open* software with
-    good support for the format.
+- The format can contain not only data, but also formulas, visualizations, images, comments,
+  formatting (color, text styles, etc.), even scripts (a common source of viruses in the past)
+  and what have you. This is worth spelling out, since it's what makes *spreadsheets* different
+  from *data tables*.
+
+- The format is *proprietary* and its development is linked to a specific piece of
+  (non-free) software (Excel).
+  - In general this is a bad thing, since it might tie you to the specific piece of software.
+    Which also might not be available 5, 10, 20 years from now.  
+  - It's less of an issue with the Excel format than many other proprietary
+    formats – the ubiquity of Excel has led to good third-party support
+    for the format, and there's no shortage of *free* and *open* software that
+    supports the format.
+    Not all implementations support all features of the format though.
 
 - The format changes over time together with the software itself.
-  Different versions of Excel may handle data differently, leading to inconsistencies. 
+  Different versions of Excel may handle data differently, leading to inconsistencies.
 
 - It's a *very complex* file format. This is an issue that is often overlooked,
   but for long-term storage it's imporant to keep in mind.
@@ -59,25 +66,27 @@ for **publishing/sharing** your data, there's some reasons to consider alternati
 
 As an example, do you remember how we talked about how Excel stores **dates** earlier? Turns out there are **multiple defaults for different versions of the software**. And you can switch between them all willy-nilly. So, say you’re compiling Excel-stored data from multiple sources. There’s dates in each file- Excel interprets them as their own internally consistent serial numbers. When you combine the data, Excel will take the serial number from the place you’re importing it from, and interpret it using the rule set for the version of Excel you’re using. Essentially, you could be adding a huge error to your data, and it wouldn’t necessarily be flagged by any data cleaning methods if your ranges overlap.
 
-Storing data in a **universal**, **open**, **static format** will help deal with this problem. Try **tab-delimited** or **CSV** (more common). CSV files are plain text files where the columns are separated by commas, hence 'comma separated variables' or CSV. The advantage of a CSV over an Excel/SPSS/etc. file is that we can open and read a CSV file using just about any software, including a simple **text editor**. Data in a CSV can also be **easily imported** into other formats and environments, such as SQLite and R. We're not tied to a certain version of a certain expensive program when we work with CSV, so it's a good format to work with for maximum portability and endurance. Most spreadsheet programs can save to delimited text formats like CSV easily.
+## The CSV format for data tables
 
-To save a spreadsheet as CSV:
+When **archiving**, **publishing** or **sharing** data, it's a good idea to consider
+an alterative format – one which is **universal**, **open** and **static**
+(no formulas, scripts, etc.) format.
 
-1. From the top menu select 'File' and 'Save as'.
-2. In the 'Format' field, from the list, select 'Comma Separated Values' (`*.csv`).
-3. Double check the file name and the location where you want to save it and hit 'Save'.
+The de facto standard format in these cases would be the [CSV format](https://en.wikipedia.org/wiki/Comma-separated_values) (*comma-separated values*).
+- CSV files are *plain text files*. The cells are separated by a delimiting character (commas, tabs or similar)
+  and the rows by linebreaks.
+  If a part of the file gets corrupted, the rest of the file is still fine.
+- They can be opened using just about any software that works with tabular data.
+  You can even open them in a **text editor** like Notepad for inspection and simple editing.  
+- Data in a CSV file can be **easily imported** into other formats and environments, so it's a good format to work with for maximum portability and endurance.
 
-![Saving an Excel file to CSV](../fig/excel-to-csv.png)
+When it comes to data exchange and long-term storage, simplicity is king and CSV is perfect!
+But CSV files can only contain data tables (one per file), nothing of the other stuff you
+can have in a spreadsheet like formulas, merged cells, formatting, comments, figures, etc.
 
-### Sometimes CSV is too simple
+### Options for CSV files
 
-When it comes to data exchange and long-term storage, simplicity is king and CSV is perfect! 
-For other use cases, the CSV format might be too simple though. The CSV format do not support
-features like formatting (color, text style, etc.), merged cells, comments, figures, formulas, etc.
-
-## Importing CSV files
-
-The CSV format comes with some options that you need to be aware of when importing CSV files.
+A CSV file comes with some options that you need to be aware of when saving data as CSV or importing data from CSV.
 The most important are:
 
 * **Separator**: The table cells in a CSV file can in principle be separated by any type of symbol as
@@ -95,7 +104,26 @@ The most important are:
   Unfortunately, Excel still exports CSV files using legacy character encodings.
   LibreOffice is better in this case, as it provides you with an option of what character encoding to use.
 
-Some software are quite smart when it comes to detecting these settings for you upon import.
+### Saving a table in Excel as CSV
+
+All spreadsheet programs can save to CSV, but they differ a bit in how well they do it.
+
+1. From the top menu select 'File' and 'Save as'.
+2. In the 'Format' field, from the list, select 'Comma Separated Values' (`*.csv`).
+3. Double check the file name and the location where you want to save it and hit 'Save'.
+
+![Saving an Excel file to CSV](../fig/excel-to-csv.png)
+
+Warning: Excel does not give you the option to choose character encoding, but instead selects
+a legacy character encoding based on which language you'r system is using.
+Before sharing a CSV file from Excel you should convert it to Unicode (UTF-8) – this can be
+done in a text editor like Notepad++.
+Or export CSV from LibreOffice or Google Sheets instead.
+LibreOffice provides you with all the options you need, while Google Sheets just use sensible defaults.
+
+## Importing CSV files
+
+Some software are quite smart when it comes to detecting the above-mentioned CSV options upon import.
 Excel is not, but it provides you with an import wizard where you can select the settings yourself
 by trying and failing. If you see question marks like this it means the file is encoded using
 a different encoding than the one you have selected:
@@ -120,7 +148,7 @@ For the text qualifier setting, the default value is also usually the correct on
 {: .challenge}
 
 
-## A Note on Cross-platform Operability
+## A final note on cross-platform operability
 (or, how typewriters are ruining your work)
 
 By default, most coding and statistical environments expect UNIX-style line endings (`\n`) as representing line breaks.  However, Windows uses an alternate line ending signifier (`\r\n`) by default for legacy compatibility with Teletype-based systems.  As such, when exporting to CSV using Excel, your data will look like this:
