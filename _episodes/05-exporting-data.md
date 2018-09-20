@@ -6,9 +6,10 @@ questions:
   - What problems are there with Excel files?
   - How can these problems be solved?
 objectives:
-  - Store spreadsheet data in universal file formats.
-  - Export data from a spreadsheet to a .csv file.
-  - Import data from .csv files.
+  - Understand the difference between spreadsheets and tables.
+  - Understand reasons for storing data in the CSV format
+  - Export data from a spreadsheet to a CSV file.
+  - Import data from a CSV file into a spreadsheet.
 keypoints:
   - Use the CSV file format for data storage and exchange
 
