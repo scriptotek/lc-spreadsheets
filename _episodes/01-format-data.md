@@ -62,14 +62,12 @@ you started with. In order to be able to reproduce your analyses or figure out
 what you did when your leadership team ask for a different analysis,
 **you must**
 
-- **create a new file or tab with your cleaned or analyzed data.** Do
-  not modify that original dataset, or you will never know where you
-  started!
+- **create a new file or tab with your cleaned or analyzed data.**  
+  Do not modify that original dataset, or you will never know where you started!
 - **keep track of the steps you took in your clean up or analysis.**  
-  We recommend that you keep track of important things you did to the  
-  original data in a separate sheet, for example noting if you used  
-  some great recipe for tidying up data or if you reorganized the data  
-  in an complex or major way.
+  We recommend that you keep track of important things you did to the original  
+  data in a separate sheet, for example noting if you used some great recipe  
+  for tidying up data or if you reorganized the data in an complex or major way.
 
 Put these principles in to practice today during your Exercises. 
 
@@ -79,16 +77,22 @@ Put these principles in to practice today during your Exercises.
 
 The cardinal rules of using spreadsheet programs for data:
 
-1. Put all your **variables in columns** - the thing you're measuring,
-   like 'weight' or 'temperature'.
-2. Put each **observation in its own row**.
-3. **Don't combine multiple pieces of information in one
-   cell**. Sometimes it just seems like one thing, but think if that's
+1. Put each **variable in a column** - ie. a descriptive field like  
+   'first name', 'last name, 'callcode', 'collection', etc.
+2. Put each **observation in its own row**, i.e.  
+    a book, a student, a journal, etc.
+3. **Don't combine multiple pieces of information in one cell**.  
+   Sometimes it just seems like one thing, but think if that's
    the only way you'll want to be able to use or sort that data.
 4. **Leave the raw data raw** - don't mess with it!
 5. Export the cleaned data to a **text based format** like CSV. This
    ensures that anyone can use the data, and is the format required by
    most data repositories.
+
+|Last Name|FirstName|Position  ||Title          |Callcode|Collection|
+|---------|---------|----------||---------------|--------|----------|
+|Olsen    |Mark     |Undergrad ||Brave New World|45a/45  |SciFiColl |
+|Jamestown|Donna    |Ph        ||Utopia         |45a/46  |SCifiColl |
 
 For instance, we have data from a survey of small mammals in a desert
 ecosystem. Different people have gone to the field and entered data in
