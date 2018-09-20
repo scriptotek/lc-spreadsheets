@@ -77,7 +77,39 @@ features like formatting (color, text style, etc.), merged cells, comments, figu
 
 ## Importing CSV files
 
-TODO
+The CSV format comes with some flexibility that you need to be aware of when importing CSV files:
+
+* **Separator**: The table cells in a CSV file can in principle be separated by any type of symbol as
+  long as the file is consistent. The most common is comma (therby the name), but tab is also very
+  common, and you might also come across semicolon.
+
+* **Escape character** or **text qualifier**: If there's an actual comma symbol (or whatever separator token you have)
+  within a cell, that value must be "escaped" in some way so it's not interpreted as a separator.
+  Again, there's different ways to do this.
+
+* **Character encoding**: As with other text files, a CSV file has a character encoding that determines how characters are stored.
+  The de facto standard today is to use Unicode (UTF-8), which supports all the alphabets of the world
+  and lots of other characters like technical symbols and emojis.
+  Unfortunately, Excel still exports CSV files using legacy character encodings.
+  LibreOffice is better in this case, as it provides you with an option of what character encoding to use.
+
+Some software are quite smart when it comes to detecting these settings for you upon import.
+Excel is not, but it provides you with an import wizard where you can select the settings yourself
+by trying and failing. If you see question marks like this it means the file is encoded using
+a different encoding than the one you have selected:
+
+![Wrong encoding during import](../fig/import-encoding-problem.png)
+
+In this case, the file was encoded as a legacy encoding called "Windows (ANSI)" or 
+"[CP-1252](https://en.wikipedia.org/wiki/Windows-1252)", which is limited to the Latin alphabet
+with some extensions.
+
+In the next step of the import, you can select the delimiter and text qualifier.
+This is easier since there are fewer options, and Excel will preview the result.
+For the text qualifier setting, the default value is also usually the correct one.
+
+![Correct delimiter during import](../fig/import-csv-delimiter.png)
+
 
 ## A Note on Cross-platform Operability
 (or, how typewriters are ruining your work)
