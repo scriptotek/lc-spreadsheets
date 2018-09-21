@@ -78,7 +78,7 @@ Put these principles in to practice today during your Exercises.
 The cardinal rules of using spreadsheet programs for data:
 
 1. Put each **variable in a column** - ie. a descriptive field like  
-   'first name', 'last name, 'birt date', etc.
+   'first name', 'last name, 'birth date', etc.
 2. Put each **observation in its own row**, i.e. a student.
 3. **Don't combine multiple pieces of information in one cell**.  
    Sometimes it just seems like one thing, but think if that's
