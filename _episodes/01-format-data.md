@@ -78,9 +78,8 @@ Put these principles in to practice today during your Exercises.
 The cardinal rules of using spreadsheet programs for data:
 
 1. Put each **variable in a column** - ie. a descriptive field like  
-   'first name', 'last name, 'callcode', 'collection', etc.
-2. Put each **observation in its own row**, i.e.  
-    a book, a student, a journal, etc.
+   'first name', 'last name, 'birt date', etc.
+2. Put each **observation in its own row**, i.e. a student.
 3. **Don't combine multiple pieces of information in one cell**.  
    Sometimes it just seems like one thing, but think if that's
    the only way you'll want to be able to use or sort that data.
@@ -90,40 +89,23 @@ The cardinal rules of using spreadsheet programs for data:
    most data repositories.
 
 
-|Last Name|First Name|Position  |Birtdate  |
-|---------|----------|----------|----------|
-|Olsen    |Mark      |Undergrad |05.06.1999|
-|Jameston |Donna     |Phd       |04.08.1985|
+Here is an example of poorly structured table of books in a spreadsheet:
 
+|Book                   |Callcode|Collection|Library               
+|-----------------------|--------|----------|-------------------------------------------|
+|Brave New World, 1931  |Hux:Bra |SciFiColl |University Library Oslo,Science Library    |
+|War of the Worlds, 1898|Wel:War |SCifiColl |University Library Oslo,Informatics library|
 
-|Title            |Callcode|Collection|Library                |Location|
-|-----------------|--------|----------|-----------------------|--------|
-|Brave New World  |Hux:Bra |SciFiColl |University Library Oslo|Science Library|
-|War of the Worlds|Wel:War |SCifiColl |University Library Oslo|Informatics library|
+The problem is that even though this table is readable for humans, they way the information is placed in the
+columns makes it hard for a spreadsheet program to work with it. This is a better way of building up a table
+(notice that the information is exactly the same, only organized a bit differently):
 
+|Title            |Year  |Callcode|Collection|Library                |Location           |
+|-----------------|------|--------|----------|-----------------------|-------------------|
+|Brave New World  |1931  |Hux:Bra |SciFiColl |University Library Oslo|Science Library    |
+|War of the Worlds|1898  |Wel:War |SCifiColl |University Library Oslo|Informatics library|
 
-For instance, we have data from a survey of small mammals in a desert
-ecosystem. Different people have gone to the field and entered data in
-to a spreadsheet. They keep track of things like species, plot,
-weight, sex and date collected.
-
-If they were to keep track of the data like this:
-
-![multiple-info example](../fig/multiple-info.png)
-
-the problem is that species and sex are in the same field. So, if they wanted to 
-look at all of one species or look at different weight distributions by sex, 
-it would be hard to set up the data to do this. If instead we put sex and species 
-in different columns, you can see that it would be much easier. 
-
-### Columns for variables and rows for observations
-
-The rule of thumb, when setting up a datasheet, is **columns =
-variables**, **rows = observations**, **cells = data** (values).
-
-So, instead we should have:
-
-![single-info example](../fig/single-info.png)
+This allows for more options in working with the data, such as ordering by year and filtering on location (i.e. only showing books located at the informatics library), and so on.
 
 > ## Exercise
 >
