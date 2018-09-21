@@ -37,8 +37,7 @@ contributors:
 - [Multiple tables](#tables)
 - [Multiple sheets](#shets)
 - [Header pollution](#freezing)
-- [Not filling in zeros](#zeros)
-- [Using bad null values](#null)
+- [Zero vs null](#zerovsnull)
 - [Using formatting to convey information](#formatting)
 - [Using formatting to make the data sheet look pretty](#formatting_pretty)
 - [Placing comments or units in cells](#units)
@@ -74,27 +73,13 @@ Here is a recipe:
 [Documentation on how to freeze column headers](https://support.office.com/en-ca/article/Freeze-column-headings-for-easy-scrolling-57ccce0c-cf85-4725-9579-c5d13106ca6a)
 
 
-## Not filling in zeroes {#zeros}
+## Zero vs null {#zerovsnull}
 
-It might be that when you're measuring something, it's
-usually a zero, say the number of times an elephant
-is observed in the object or the survey. Why bother
-writing in the number zero in that column, when it's mostly zeros?
+It might be that when you're measuring something, it's a zero, say if a patron reports never having used a certain service.
+If this happens often and you get a lot of zeroes, why bother writing in the number zero in that column, when it's mostly zeros?
 
-However, there's a difference between a zero and a blank cell in a spreadsheet. To the computer, a zero is actually data. You measured or counted it. A blank cell means that it wasn't measured and the computer will interpret it as a null value.
-
-The spreadsheets or statistical programs will likely mis-interpret blank cells that are meant to be zero. This is equivalent to leaving out data. Zero observations are real data! Leaving zero data blank is not good in a written lab notebook, but NEVER okay when you move your data into a digital format.
-
-
-## Using bad null values {#null}
-
-**Example**: using -999 or other numerical values (or zero).
-
-**Solution**: Many statistical programs will not recognize that numeric values of null are indeed null. It will depend on the final application of your data and how you intend to analyse it, but it is essential to use a clearly defined and CONSISTENT null indicator. Blanks (most applications) and NA (for R) are good choices.
-
-From White et al, 2013, [Nine simple ways to make it easier to (re)use your data.](https://ojs.library.queensu.ca/index.php/IEE/article/view/4608) Ideas in Ecology and Evolution:
-
-![White et al.](../fig/3_white_table_1.jpg)
+However, there's a difference between a zero and a blank cell in a spreadsheet. To the computer, a zero is actually data. You measured or counted it. A blank cell means that it wasn't measured and the computer will interpret it as a **null** value. A null value really means "nobody knows" to a computer, equivalent to leaving out data, which is very different from knowing that something has a specific value of zero. If you use blanks for zeroes or zeroes for blanks it will cause all sorts of problems for your analyses.
+Most spreadsheet programs accepts a completely empty cell as null, so if you have no data, **leave the cell empty!**  
 
 
 ## Using formatting to convey information  {#formatting}
