@@ -35,7 +35,8 @@ contributors:
 ## Common Spreadsheet Errors
 
 - [Multiple tables](#tables)
-- [Multiple tabs](#tabs)
+- [Multiple sheets](#shets)
+- [Header pollution](#freezing)
 - [Not filling in zeros](#zeros)
 - [Using bad null values](#null)
 - [Using formatting to convey information](#formatting)
@@ -52,29 +53,23 @@ contributors:
 ## Multiple tables {#tables}
 
 A common strategy is creating multiple data tables within one
-spreadsheet. **This confuses the computer, so don't do this!** When
-you create multiple tables within one spreadsheet, you’re drawing
-false associations between things for the computer, which sees each
-row as an observation. You’re also potentially using the same field
-name in multiple places, which will make it harder to clean your data
-up into a usable form. The example below depicts the problem:
+spreadsheet. This is examplified in the figure below:
 
 ![multiple tabs](../fig/2_datasheet_example.jpg)
 
+Although it is often useful to have many tables on the same spreadsheet by making the tables more accessible and simpler to visually compare, mentally group them, etc., it leads to difficulties in exporting to other formats such as csv. You will have to put each table into its own sheet (and as a seperate issue clean up the data) and export each sheet into its own csv-file. The example above depicts a typical visualization of data for reports etc, and isn't very practical to be doing analyses on.
 
-## Multiple tabs {#tabs}
+## Multiple sheets {#sheets}
 
-But what about worksheet tabs? That seems like an easy way to organize data, right? Well, yes and no. When you create extra tabs, you fail to allow the computer to see connections in the data that are there (you have to introduce spreadsheet application-specific functions or scripting to ensure this connection). Say, for instance, you make a separate tab for each day you take a measurement.
+It is not easy to categorically state when it is beneficial to keep all the data in a large grid of colums and rows and when to split the data into separate sheets. A general rule could be to put data that can be naturally placed in the same columns in the same sheet, and only create a new sheet if the new data has a different set of columns, i.e. structure. For example, if you do the same survey on library user behavior every year and the only difference is year, it is better to keep all the data in the same sheet and not make a new one for each year. But what happens if you add one question, say for age, that give you an extra column, should you then make a new sheet for the new data? Well, no. Just add the new column to existing sheet. Excel (and other programs) have ways of dealing with **missing data**, and you get the benefit of being able to compare all the old data with the new in the same sheet. But what if you add two new questions, and maybe remove one, what then? Again, it is difficult to give a categorical answer, but if you see that the new data is **structurally too different**, i.e. have to many differences, then you should place it in a new sheet.
 
-This is bad practice for two reasons:
-**1)** you are more likely to accidentally add inconsistencies to your data if each time you take a measurement, you start recording data in a new tab, and
-**2)** even if you manage to prevent all inconsistencies from creeping in, you will add an extra step for yourself before you analyze the data because you will have to combine these data into a single datatable. You will have to explicitly tell the computer how to combine tabs - and if the tabs are inconsistently formatted, you might even have to do it by hand!
+## Header pollution {#freeze}
+Often the title headers of columns can get confused into the data itself analysis (for example sorting or summation). Sometimes you can even get an excel file where the headers titles routinely show up every 30 rows or so to remind you of what column is what.
+This is not a good solution for getting an overview of the data because it will cause all kinds of errors when sorting, counting etc.
+The header row should only be one row (the topmost) and most spreadsheet programs have good methods for dealing with them.
+If you want to keep an overview of the column names in large datasets, you can freese the column headers, so that they are visible at all times.  
 
-The next time you’re entering data, and you go to create another tab or table, I want you to ask yourself “Self, could I avoid adding this tab by adding another column to my original spreadsheet?”
-
-Your data sheet might get very long over the course of experiment. This makes it harder to enter data if you can’t see your headers at the top of the spreadsheet. But do NOT repeat headers. These can easily get mixed into the data, leading to problems down the road.
-
-Instead you can Freeze the column headers.
+Here is a recipe:
 
 [Documentation on how to freeze column headers](https://support.office.com/en-ca/article/Freeze-column-headings-for-easy-scrolling-57ccce0c-cf85-4725-9579-c5d13106ca6a)
 
