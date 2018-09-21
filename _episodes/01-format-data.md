@@ -113,14 +113,16 @@ This allows for more options in working with the data, such as ordering by year 
 >
 > 1. First [download the data](../data/training_attendance.xlsx)
 > 2. Open up the data in a spreadsheet program
-> 1. You can see that there are three tabs. Various people have recorded
+> 1. You can see that there are two tabs. Various people have recorded
   training attendance statistics over 2016 and 2017, and they have
   kept track of the data in their own way. Now you're being asked to
   evaluate the training programme and you want to be able to start
-  doing statistics with the data.
-> 1. With the person next to you, work on the messy data so that a
-  computer will be able to understand it. Clean up the 2016 and 2017
-  tabs, and put them all together in one spreadsheet.
+  working with the data.
+> 1. With the person next to you, work on the messy data so that there is only  
+  one value per column and all the values are formatted so they look the same.  
+  Clean up the 2016 and 2017 tabs, and put them all together in one spreadsheet.
+  We have made a "Solutions sheet" with all the columns titles ready-made to help  
+  you get going - paste in the data there and refine it, do not change the original sheets!
 > 1. After you go through this exercise, we'll discuss as a group what you think was wrong
 with this data and how you fixed it. 
 {: .challenge}
@@ -133,10 +135,5 @@ with this data and how you fixed it.
 > modify the original (raw) data**.
 {: .callout}
 
-
-An excellent reference, in particular with regard to R scripting is
-
-> Hadley Wickham, *Tidy Data*, Vol. 59, Issue 10, Sep 2014, Journal of
-> Statistical Software. [http://www.jstatsoft.org/v59/i10](http://www.jstatsoft.org/v59/i10).
 
 <!-- *Instructors see notes in 'instructors_notes.md' on this exercise.* -->
