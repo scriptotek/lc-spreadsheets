@@ -97,8 +97,8 @@ Here is an example of poorly structured table of books in a spreadsheet:
 |War of the Worlds, 1898|Wel:War |SCifiColl |University Library Oslo,Informatics library|
 
 The problem is that even though this table is readable for humans, they way the information is placed in the
-columns makes it hard for a spreadsheet program to work with it. This is a better way of building up a table
-(notice that the information is exactly the same, only organized a bit differently):
+columns makes it hard for a spreadsheet program to work with it.  
+This is a better way of building up a table (notice that the information is exactly the same, only organized a bit differently):
 
 |Title            |Year  |Callcode|Collection|Library                |Location           |
 |-----------------|------|--------|----------|-----------------------|-------------------|
@@ -119,9 +119,9 @@ This allows for more options in working with the data, such as ordering by year 
   evaluate the training programme and you want to be able to start
   working with the data.
 > 1. With the person next to you, work on the messy data so that there is only  
-  one value per column and all the values are formatted so they look the same.  
+  one value per cell and that all values in the same column have the same format.  
   Clean up the 2016 and 2017 tabs, and put them all together in one spreadsheet.
-  We have made a "Solutions sheet" with all the columns titles ready-made to help  
+  We have made a "Solutions" sheet with all the columns titles ready-made to help  
   you get going - paste in the data there and refine it, do not change the original sheets!
 > 1. After you go through this exercise, we'll discuss as a group what you think was wrong
 with this data and how you fixed it. 
