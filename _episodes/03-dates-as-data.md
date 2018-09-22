@@ -41,13 +41,6 @@ But these ‘features’ often allow ambiguity to creep into your data. Ideally,
 
 It is important to make sure that the dates you enter are understood by the spreadsheet program. A nice approach is to format the column in the date format you want before you start entering dates. In Excel you can do this by selecting the entire column (click on the "letter" header of the column i.e. "A"), then right click and choose "Format cells". Chose "Date", and find the format you want from the list, for example "dd.mm.yyyy". Now, even if you write "14. jul", "14-jul", etc, if Excel understands what you write as a date it will convert it into the format you've chosen. If Excel doesn't understand what you write, it will not format your date and you immediately see that it is poorly written.
 
-**Question**  
-What will happen if you save the file in Excel (in `csv` format) and then open the file using a plain text editor? 
-
-> ## Note
-> 
-> You will notice that when exporting into a text-based format (such as CSV), Excel will export its internal date integer instead of a useful value (that is, the dates will be represented as integer numbers). This can potentially lead to problems, if you use other software to manipulate the file.
-{: .callout}
 
 
 Dates in spreadsheets are usually stored in one column. Whilst this seems the
