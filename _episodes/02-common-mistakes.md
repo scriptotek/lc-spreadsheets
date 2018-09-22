@@ -8,15 +8,14 @@ objectives:
   - Recognize and resolve common spreadsheet formatting problems.
 keypoints:
   - "Don't use multiple tables in one sheet"
-  - "Don't use multiple tabs in a file"
-  - Fill in zero when you mean zero
-  - Use a blank cell to indicate a null value
+  - "Fill in zero when you mean zero"
+  - "Use a blank cell to indicate a null value"
   - "Don't use formatting to convey information or make the data look pretty"
   - "Don't put units or comments in cells"
   - "Don't combine several values in one cell"
   - "Take care over column names"
-  - "Avoid including special characters in your data file"
-  - "Put metadata (units, legends etc.) in a separate file"
+  - "Avoid including special characters"
+  - "Put metadata (units, legends etc.) in a separate sheet"
 
 authors:
   - Jez Cope
@@ -45,7 +44,6 @@ contributors:
 - [Field name problems](#field_name)
 - [Special characters in data](#special)
 - [Inclusion of metadata in data table](#metadata)
-- [Date formatting](03-dates-as-data.html)
 
 ---
 
@@ -125,12 +123,12 @@ Like stated above, make sure to give columns names that leave no doubt to what t
 
 **Solution**: This is a common strategy. For example, when writing longer text in a cell, people often include line breaks in their spreadsheet.  Worse yet, when copying data in from applications such as Word, formatting and fancy non-standard characters (such as left- and right-aligned quotation marks) are included. When exporting this data into other formats such as csv-files, dangerous things may occur, such as lines being cut in half. To deal with "rich text" such as the text copied from Word, you can place the text in an intermediate program such as "Notepad" that changes the text into a simpler one and makes any hidden code visbile so that you can tidy up the text.
 
-General best practice is to avoid adding special characters such as newlines, tabs, pipes, backslashes (backslashes can be particulary evil). Try to have your cells contain only the content that they absolutely need, such as numbers, text and spaces. Obviously there are exceptions, you will sometimes need periods (in dates), quotation marks, apostophes, dashes, etc., but don't use them haphazardly. 
+General best practice is to avoid adding special characters such as newlines, tabs, pipes and backslashes (backslashes can be particularly evil). Try to have your cells contain only the content that they absolutely need, such as numbers, text and spaces. Obviously there are exceptions, you will sometimes need periods (in dates), quotation marks, apostophes, dashes, etc., but don't use them haphazardly. 
 
 
 ## Inclusion of metadata in data table {#metadata}
 
 **Example**: You add a legend at the top or bottom of your data table explaining column meaning, units, exceptions, etc.
 
-**Solution**: While recording data about your data ("metadata") is essential, this information should not be contained in the data file itself. Unlike a table in a paper or a supplemental file, metadata (in the form of legends) should not be included in a data file since this information is not data, and including it can disrupt how computer programs interpret your data file. Rather, metadata should be stored as a separate file in the same directory as your data file, preferably in plain text format with a name that clearly associates it with your data file. Because metadata files are free text format, they also allow you to encode comments, units, information about how null values are encoded, etc. that are important to document but can disrupt the formatting of your data file.
+**Solution**: While recording data about your data ("metadata") is essential, this information should not be contained with the data itself. Unlike a table in a paper or a supplemental file, metadata (in the form of legends) should not be included, since this information is not data. While you can work around it when you only use a spreadsheet program like Excel, it will ruin a csv-file. If you need metadata, it should be stored as a separate sheet. Because such "metadata sheets" can contain free text, you are free to copy and paste from Word, have prettified tables, include special characters and so on.
 
