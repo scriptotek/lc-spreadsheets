@@ -95,11 +95,11 @@ Most spreadsheet programs accept a completely empty cell as null, so if you have
 
 ## Using formatting to make the data sheet look pretty {#formatting_pretty}
 
-**Example**: Merged cells.
+**Example**: Merged cells. If you’re not careful, formatting a worksheet to be more aesthetically pleasing can compromise the spreadsheet program's ability to preform analyses. In the example above, the spreadsheet program would not be able to sort the 'Due Date' column because of empty cells.
 
-![merged cells](../fig/02-common-mistakes_merged.png)
+![merged cells](../fig/02-common-mistakes_merging.png)
 
-**Solution**: If you’re not careful, formatting a worksheet to be more aesthetically pleasing can compromise your computer’s ability to see associations in the data. Merged cells are an absolute formatting NO-NO if you want to make your data readable by statistics software. Consider restructuring your data in such a way that you will not need to merge cells to organize your data.
+**Solution**:  Make sure to not have empty cells if you actually have data for those cells (see null values above) and avoid merging cells with similar value.
 
 
 ## Placing comments or units in cells {#units}
