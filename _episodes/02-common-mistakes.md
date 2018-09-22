@@ -79,18 +79,18 @@ It might be that when you're measuring something, it's a zero, say if a patron r
 If this happens often and you get a lot of zeroes, why bother writing in the number zero in that column, when it's mostly zeros?
 
 However, there's a difference between a zero and a blank cell in a spreadsheet. To the computer, a zero is actually data. You measured or counted it. A blank cell means that it wasn't measured and the computer will interpret it as a **null** value. A null value really means "nobody knows" to a computer, equivalent to leaving out data, which is very different from knowing that something has a specific value of zero. If you use blanks for zeroes or zeroes for blanks it will cause all sorts of problems for your analyses.
-Most spreadsheet programs accepts a completely empty cell as null, so if you have no data, **leave the cell empty!**  
+Most spreadsheet programs accept a completely empty cell as null, so if you have no data, **leave the cell empty!**  
 
 
 ## Using formatting to convey information  {#formatting}
 
 **Example**: highlighting cells, rows or columns that should be excluded from an analysis, leaving blank rows to indicate separations in data.
 
-![formatting](../fig/formatting.png)
+![formatting](../fig/02-common-mistakes_formatting.png)
 
 **Solution**: create a new field to encode which data should be excluded.
 
-![good formatting](../fig/good_formatting.png)
+![good formatting](../fig/02-common-mistakes_formatting_fixed.png)
 
 
 ## Using formatting to make the data sheet look pretty {#formatting_pretty}
