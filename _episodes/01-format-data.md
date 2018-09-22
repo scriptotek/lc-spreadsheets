@@ -107,33 +107,4 @@ This is a better way of building up a table (notice that the information is exac
 
 This allows for more options in working with the data, such as ordering by year and filtering on location (i.e. only showing books located at the informatics library), and so on.
 
-> ## Exercise
->
-> We're going to take a messy version of some library training data and clean it up
->
-> 1. First [download the data](../data/training_attendance.xlsx)
-> 2. Open up the data in a spreadsheet program
-> 1. You can see that there are two tabs. Various people have recorded
-  training attendance statistics over 2016 and 2017, and they have
-  kept track of the data in their own way. Now you're being asked to
-  evaluate the training programme and you want to be able to start
-  working with the data.
-> 1. With the person next to you, work on the messy data so that there is only  
-  one value per cell and that all values in the same column have the same format.  
-  Clean up the 2016 and 2017 tabs, and put them all together in one spreadsheet.
-  We have made a "Solutions" sheet with all the columns titles ready-made to help  
-  you get going - paste in the data there and refine it, do not change the original sheets!
-> 1. After you go through this exercise, we'll discuss as a group what you think was wrong
-with this data and how you fixed it. 
-{: .challenge}
 
-
-> ## Important ##
->
-> Do not forget of our first piece of advice:
-> **create a new file (or tab)** for the cleaned data, **never
-> modify the original (raw) data**.
-{: .callout}
-
-
-<!-- *Instructors see notes in 'instructors_notes.md' on this exercise.* -->
