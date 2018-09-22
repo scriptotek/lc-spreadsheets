@@ -99,6 +99,37 @@ Most spreadsheet programs accept a completely empty cell as null, so if you have
 
 **Solution**:  Make sure to not have empty cells if you actually have data for those cells (see null values above) and avoid merging cells with similar value.
 
+> ## Exercise: Unmerging cells ##
+> 
+> Say for example that you have been given the sheet in the figure above where  
+> the 'Due Date' column has been merged on similar date values. What problems will this cause?  
+> Download the [data](../data/Lending _30 days_overdue.xlsx) and try to sort the table by 'Due date'.  
+>   
+> What happens?
+>
+> Do you see how doing analyses on a prettified apreadsheet can be a pain?  
+>
+> > ## Solution
+> > **But fret not!** Many preadsheet programs have a way fixing merged cells without you having to waste time on it.
+> > In Excel, you solve this in two steps: First, unmerge the cells. Second replicate the content of the newly unmerged celles.
+> > 1. Unmerge cells:  
+> >   Select the entire 'Date Due' column.  
+> >   Click on the ´Home´-tab and then click on the little upside-down triangle next to ´Merge & Center´.  
+> >   In the menu that appears, '´nmerge cells´.  
+> > 
+> > 2. Copy values into the newly unmerged cells (a bit tricky):
+> >   Select the entire 'Date Due' column again.  
+> >   Go to ´Home´ -> ´Find and Select´ -> ´Go to special...´ -> ´Blanks´ and click ´Ok´.  
+> >   This wil select all the black cells in the column. Without **selecting anything else**  
+> >   (if you do you have to do this part again, this is the tricky part), write ´=´, press **arrow key down**  
+> >   and then ´Ctrl´+´Enter´.
+> >   If you did this correctly, the cells in the 'Due Date' will now be unmerged and filled with dates.  
+> >   Now try sorting the table with the 'Due Date'-column and see what happens!
+> > 
+> {: .solution}
+{: .challenge}
+
+
 
 ## Placing comments or units in cells {#units}
 
