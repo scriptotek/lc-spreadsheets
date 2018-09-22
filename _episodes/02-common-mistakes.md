@@ -84,18 +84,20 @@ Most spreadsheet programs accept a completely empty cell as null, so if you have
 
 ## Using formatting to convey information  {#formatting}
 
-**Example**: highlighting cells, rows or columns that should be excluded from an analysis, leaving blank rows to indicate separations in data.
+**Example**: Highlighting cells, rows or columns that should be excluded from an analysis.
 
 ![formatting](../fig/02-common-mistakes_formatting.png)
 
-**Solution**: create a new field to encode which data should be excluded.
+**Solution**: Create a new field (Cancelled) to mark the data to exclude.
 
 ![good formatting](../fig/02-common-mistakes_formatting_fixed.png)
 
 
 ## Using formatting to make the data sheet look pretty {#formatting_pretty}
 
-**Example**: merging cells.
+**Example**: Merged cells.
+
+![merged cells](../fig/02-common-mistakes_merged.png)
 
 **Solution**: If you’re not careful, formatting a worksheet to be more aesthetically pleasing can compromise your computer’s ability to see associations in the data. Merged cells are an absolute formatting NO-NO if you want to make your data readable by statistics software. Consider restructuring your data in such a way that you will not need to merge cells to organize your data.
 
