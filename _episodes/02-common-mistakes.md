@@ -66,9 +66,18 @@ But what if you add two new questions, and maybe remove one, what then? Again, i
 Sometimes the title headers of columns can get confused into the data analysis itself (for example sorting or summarizing). 
 If you want to keep an overview of the column names in large datasets, you can freeze the column headers, so that they are visible at the top of thee screen no matter how far you scroll down.  
 
-Here is a recipe:
+> ## Exercise: Freezing headers ##
+> Download the [data](../data/Lending _30 days_overdue.xlsx)  
+> 1. select the **first** row **below** the point you want to freeze (under the header).
+>   You don't have to select the entire row, just one cell.
+> 2. Go to the `View`-tab and click on the `Freeze panes` button.  
+>   In the menu, chose `Freeze panes`.
+>
+> Try to scroll now, and see what happens!
+>
+> P.S. you can 'Unfreeze' the panes by going to the same menu and choosing `Unfreeze panes`.
+{: .challenge}
 
-[Documentation on how to freeze column headers](https://support.office.com/en-ca/article/Freeze-column-headings-for-easy-scrolling-57ccce0c-cf85-4725-9579-c5d13106ca6a)
 
 
 ## Zero vs null {#zerovsnull}
@@ -103,7 +112,7 @@ Most spreadsheet programs accept a completely empty cell as null, so if you have
 > 
 > Say for example that you have been given the sheet in the figure above where  
 > the 'Due Date' column has been merged on similar date values. What problems will this cause?  
-> Download the [data](../data/Lending _30 days_overdue.xlsx) and try to sort the table by 'Due Date'.  
+> Open the 'Lending 30 days_overdue.xlsx' that we worked on in the previous exercise and try to sort the table by 'Due Date'.  
 >   
 > What happens?
 >
