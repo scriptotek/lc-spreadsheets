@@ -153,13 +153,5 @@ with this data and how you fixed it.
 {: .challenge}
 
 
-> ## Important ##
->
-> Do not forget of our first piece of advice:
-> **create a new file (or tab)** for the cleaned data, **never
-> modify the original (raw) data**.
-{: .callout}
-
-
 <!-- *Instructors see notes in 'instructors_notes.md' on this exercise.* -->
 
