@@ -117,29 +117,15 @@ Most spreadsheet programs accept a completely empty cell as null, so if you have
 
 
 ## Field name problems {#field_name}
-Choose descriptive field names, but be careful not to include: spaces, numbers, or special characters of any kind. Spaces can be misinterpreted by parsers that use whitespace as delimiters and some programs don’t like field names that are text strings that start with numbers.
-Underscores (`_`) are a good alternative to spaces and consider writing names in camel-case to improve readability. Remember that abbreviations that make sense at the moment may not be so obvious in 6 months but don't overdo it with names that are excessively long. Including the units in the field names avoids confusion and enables others to readily interpret your fields.
+Like stated above, make sure to give columns names that leave no doubt to what the contents are. Try to avoid having column names that are too similar to each other. Also avoid having too verbose and long names.
 
-**Examples**  
-
-| Good Name          | Good Alternative   | Avoid                |
-|--------------------+--------------------+----------------------|
-| Max\_temp\_C       | MaxTemp            | Maximum Temp (°C)    |
-| Precipitation\_mm  | Precipitation      | precmm               |
-| Mean\_year\_growth | MeanYearGrowth     | Mean growth/year	 |
-| sex                | sex                | M/F                  |
-| weight             | weight             | w.                   |
-| cell\_type         | CellType           | Cell Type            |
-| Observation\_01    | first\_observation | 1st Obs              |
-
-
-## Special characters in data {#special}
+## Special characters and Rich text {#special}
 
 **Example**: You treat Excel as a word processor when writing notes, even copying data directly from Word or other applications.
 
-**Solution**: This is a common strategy. For example, when writing longer text in a cell, people often include line breaks, em-dashes, et al in their spreadsheet.  Worse yet, when copying data in from applications such as Word, formatting and fancy non-standard characters (such as left- and right-aligned quotation marks) are included.  When exporting this data into a coding/statistical environment or into a relational database, dangerous things may occur, such as lines being cut in half and encoding errors being thrown.
+**Solution**: This is a common strategy. For example, when writing longer text in a cell, people often include line breaks in their spreadsheet.  Worse yet, when copying data in from applications such as Word, formatting and fancy non-standard characters (such as left- and right-aligned quotation marks) are included. When exporting this data into other formats such as csv-files, dangerous things may occur, such as lines being cut in half. To deal with "rich text" such as the text copied from Word, you can place the text in an intermediate program such as "Notepad" that changes the text into a simpler one and makes any hidden code visbile so that you can tidy up the text.
 
-General best practice is to avoid adding characters such as newlines, tabs, and vertical tabs.  In other words, treat a text cell as if it were a simple web form that can only contain text and spaces.
+General best practice is to avoid adding special characters such as newlines, tabs, pipes, backslashes (backslashes can be particulary evil). Try to have your cells contain only the content that they absolutely need, such as numbers, text and spaces. Obviously there are exceptions, you will sometimes need periods (in dates), quotation marks, apostophes, dashes, etc., but don't use them haphazardly. 
 
 
 ## Inclusion of metadata in data table {#metadata}
