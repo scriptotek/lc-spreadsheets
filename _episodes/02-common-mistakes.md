@@ -111,9 +111,9 @@ Most spreadsheet programs accept a completely empty cell as null, so if you have
 
 ## More than one piece of information in a cell {#info}
 
-**Example**: You find one male, and one female of the same species. You enter this as 1M, 1F.
+**Example**: In the Book-column from the example in the introduction lesson, both title and year were placed in the same column.
 
-**Solution**: Never include more than one piece of information in a cell. If you need both these measurements, design your data sheet to include this information.
+**Solution**: Never include more than one piece of information in a cell. Create a good structure for your data before you start filling in information, make enough columns so that you have a precicely named column for each data type, i.e. "Title", "Year".
 
 
 ## Field name problems {#field_name}
