@@ -107,4 +107,9 @@ This is a better way of building up a table (notice that the information is exac
 
 This allows for more options in working with the data, such as ordering by year and filtering on location (i.e. only showing books located at the informatics library), and so on.
 
-
+> ## Important ##
+>
+> Remember:
+> Have a **separate** sheet for the cleaned data to the data you change, **never
+> modify the original (raw) data**.
+{: .callout}
