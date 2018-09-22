@@ -62,21 +62,6 @@ Let's try with a simple challenge.
 > (Make sure the new column is formatted as a number and not as a date.)
 {: .challenge}
 
-> ## Exercise: pulling hour, minute and second out of the current time ##
-> 
-> Current time and date are best retrieved using the functions `NOW()`, which
-> returns the current date and time, and `TODAY()`, which returns the current
-> date. The results will be formatted according to your computer's settings.
-> 
-> - Try to extract the year, month and day from the current date and time string
-> returned by the `NOW()` function.
-> - Calculate the current time using `NOW()-TODAY()`.
-> - Try to extract the hour, minute and second from the current time using
-> functions `HOUR()`, `MINUTE()` and `SECOND()`.
-> - press `F9` to force the spreadsheet to recalculate the `NOW()` function,
-> and check that it has been updated.
-{: .challenge}
-
 ## Preferred date format
 
 Instead it is much safer to store dates with [MONTH, DAY and YEAR](#day) in separate columns or as [YEAR and DAY-OF-YEAR](#doy) in separate columns.
