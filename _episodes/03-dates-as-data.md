@@ -26,8 +26,31 @@ contributors:
   - Ben Marwick
 ---
 
+Dates can be written in numerous ways, both with or without letters, punctuation, dashes, slashes, abbreviations, space etc.
+Ofcourse, although modern spreadsheet programs are quite clever at understanding different ways of writing dates, not all of these formats will be interpreded correctly.
 
-Dates in spreadsheets are stored in one column. Whilst this seems the
+## Data formats in spreadsheets
+
+Spreadsheet programs have numerous “useful features” which allow them to “handle” dates in a variety of ways.
+
+![Many formats, many ambiguities](../fig/5_excel_dates_1.jpg)
+
+But these ‘features’ often allow ambiguity to creep into your data. Ideally, data should be as unambiguous as possible. 
+
+### Properly formatting dates
+
+It is important to make sure that the dates you enter are understood by the spreadsheet program. A nice approach is to format the column in the date format you want before you start entering dates. In Excel you can do this by selecting the entire column (click on the "letter" header of the column i.e. "A"), then right click and choose "Format cells". Chose "Date", and find the format you want from the list, for example "dd.mm.yyyy". Now, even if you write "14. jul", "14-jul", etc, if Excel understands what you write as a date it will convert it into the format you've chosen. If Excel doesn't understand what you write, it will not format your date and you immediately see that it is poorly written.
+
+**Question**  
+What will happen if you save the file in Excel (in `csv` format) and then open the file using a plain text editor? 
+
+> ## Note
+> 
+> You will notice that when exporting into a text-based format (such as CSV), Excel will export its internal date integer instead of a useful value (that is, the dates will be represented as integer numbers). This can potentially lead to problems, if you use other software to manipulate the file.
+{: .callout}
+
+
+Dates in spreadsheets are usually stored in one column. Whilst this seems the
 most natural way to record dates, it actually is not a good
 practice. A spreadsheet application will display the dates in
 seemingly correct way (for the human eye) but how it actually handles
@@ -88,60 +111,6 @@ Instead it is much safer to store dates with [MONTH, DAY and YEAR](#day) in sepa
 {: .callout}
 
 
-## Data formats in spreadsheets
-
-Spreadsheet programs have numerous “useful features” which allow them to “handle” dates in a variety of ways.
-
-![Many formats, many ambiguities](../fig/5_excel_dates_1.jpg)
-
-But these ‘features’ often allow ambiguity to creep into your data. Ideally, data should be as unambiguous as possible. 
-
-### Dates stored as integers
-
-The first thing you need to know is that Excel **stores dates as a number** - see the last column in the above figure. Essentially, it counts the days from a default of December 31, 1899, and thus stores July 2, 2014 as  the serial number 41822.
-
-(But wait. That’s the default on my version of Excel. We’ll get into how this can introduce problems down the line later in this lesson. )
-
-This serial number thing can actually be useful in some circumstances. By using
-the above functions we can easily add days, months or years to a given date.
-Say you had a sampling plan where you needed to sample every thirty seven days.
-In another cell, you could type:
-    
-    =B2+37
-    
-And it would return
-
-    8-Aug
-
-because it understands the date as a number `41822`, and `41822 + 37 = 41859`
-which Excel interprets as August 8, 2014. It retains the format (for the most
-part) of the cell that is being operated upon, (unless you did some sort of
-formatting to the cell before, and then all bets are off). Month and year
-rollovers are internally tracked and applied.
-
-> ## Note
-> 
-> Adding years and months and days is slightly trickier because we need to make
-> sure that we are adding the amount to the correct entity.
-> 
-> - First we extract the single entities (day, month or year)
-> - We can then add values to to that
-> - Finally the complete date string is reconstructed using the `DATE()` function.
-> 
-> As for dates, times are handled in a similar way; seconds cam be directly
-> added but to add hour and minutes we need to make sure that we are adding
-> the quantities to the correct entities.
-{: .callout}
-
-Which brings us to the many different ways Excel provides in how it displays dates. If you refer to the figure above, you’ll see that there are many, MANY ways that ambiguity creeps into your data depending on the format you chose when you enter your data, and if you’re not fully cognizant of which format you’re using, you can end up actually entering your data in a way that Excel will badly misinterpret. 
-
-**Question**  
-What will happen if you save the file in Excel (in `csv` format) and then open the file using a plain text editor? 
-
-> ## Note
-> 
-> You will notice that when exporting into a text-based format (such as CSV), Excel will export its internal date integer instead of a useful value (that is, the dates will be represented as integer numbers). This can potentially lead to problems, if you use other software to manipulate the file.
-{: .callout}
 
 ## Advantages of Alternative Date Formatting ##
 
