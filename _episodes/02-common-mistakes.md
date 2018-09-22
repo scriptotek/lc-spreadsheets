@@ -95,7 +95,7 @@ Most spreadsheet programs accept a completely empty cell as null, so if you have
 
 ## Using formatting to make the data sheet look pretty {#formatting_pretty}
 
-**Example**: Merged cells. If you’re not careful, formatting a worksheet to be more aesthetically pleasing can compromise the spreadsheet program's ability to preform analyses. In the example above, the spreadsheet program would not be able to sort the 'Due Date' column because of empty cells.
+**Example**: Merged cells. If you’re not careful, formatting a worksheet to be more aesthetically pleasing can compromise the spreadsheet program's ability to preform analyses. In the example below, the spreadsheet program would not be able to sort the 'Due Date' column because of empty cells.
 
 ![merged cells](../fig/02-common-mistakes_merging.png)
 
@@ -104,9 +104,9 @@ Most spreadsheet programs accept a completely empty cell as null, so if you have
 
 ## Placing comments or units in cells {#units}
 
-**Example**: Your data was collected, in part, by a summer student who you later found out was mis-identifying some of your species, some of the time. You want a way to note these data are suspect.
+**Example**: You have an uncertain date for training course data marked with a question mark, like  this 02.06.20167?
 
-**Solution**: Most statistical programs can’t see Excel’s comments, and would be confused by comments placed within your data cells. As described above for formatting, create another field if you need to add notes to cells. Similarly, don’t include units in cells: ideally, all the measurements you place in one column should be in the same unit, but if for some reason they aren’t, create another field and specify the units the cell is in.
+**Solution**: Spreadsheet programs (like Excel), unlike humans, do not understand that by placing a question mark at the end of a value specifies that the value is uncertain. As described above for formatting, create another field if you need to add notes to cells. Similarly, don’t include units in cells, for example if you have a column for hours, don't put in "1,5h" or "1,5 hours". Also make sure that the measurements you place in one column are of the same unit, i.e. don't enter minutes in a column specified for hours. 
 
 
 ## More than one piece of information in a cell {#info}
