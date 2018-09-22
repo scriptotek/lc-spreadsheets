@@ -27,7 +27,7 @@ contributors:
 ---
 
 Dates can be written in numerous ways, both with or without letters, punctuation, dashes, slashes, abbreviations, space etc.
-Ofcourse, although modern spreadsheet programs are quite clever at understanding different ways of writing dates, not all of these formats will be interpreded correctly.
+Of course, although modern spreadsheet programs are quite clever at understanding different ways of writing dates, not all of these formats will be interpreded correctly.
 
 ## Data formats in spreadsheets
 
@@ -41,42 +41,26 @@ But these ‘features’ often allow ambiguity to creep into your data. Ideally,
 
 It is important to make sure that the dates you enter are understood by the spreadsheet program. A nice approach is to format the column in the date format you want before you start entering dates. In Excel you can do this by selecting the entire column (click on the "letter" header of the column i.e. "A"), then right click and choose "Format cells". Chose "Date", and find the format you want from the list, for example "dd.mm.yyyy". Now, even if you write "14. jul", "14-jul", etc, if Excel understands what you write as a date it will convert it into the format you've chosen. If Excel doesn't understand what you write, it will not format your date and you immediately see that it is poorly written.
 
+### Several columns for dates
 
-
-Dates in spreadsheets are usually stored in one column. Whilst this seems the
-most natural way to record dates, it actually is not a good
-practice. A spreadsheet application will display the dates in
-seemingly correct way (for the human eye) but how it actually handles
-and stores the dates may be problematic.
-
-In particular, please remember that functions that are valid for a given
-spreadsheet program (be it LibreOffice, Microsoft Excel, OpenOffice.org,
-Gnumeric, etc.) are usually guaranteed to be compatible only within the same
-famly of products. If you will later need to export the data and need to
-conserve the timestamps you are better off handling them using custom solutions.
+Most spreadsheets have dates stored in one column. Ususally spreadsheet programs offer ways of extracting parts from a date as long as it is formatted properly. But, please remember that functions that are valid for a given spreadsheet program (be it LibreOffice, Microsoft Excel, OpenOffice.org, Gnumeric, etc.) are usually guaranteed to be compatible only within the same
+family of products. 
 
 Let's try with a simple challenge.
 
 > ## Challenge: pulling month, day and year out of dates ##
 > 
-> - In the `Dates` tab of your Excel file you have some more training data from 2017. There's a `date` column.
+> - Go back to the 'training_attendance.xlsx' file and go to the '2016'-sheet.
 > - Let’s extract month and year from the dates to new columns. For this we can use the built in Excel functions
 > 
 > ```
-> =MONTH(A3)
-> =DAY(A3)
-> =YEAR(A3)
+> =MONTH(B3)
+> =DAY(B3)
+> =YEAR(B3)
 > ```
 > 
 > (Make sure the new column is formatted as a number and not as a date.)
 {: .challenge}
-
-> ## Discussion
->
-> You can see that some entries have been added more recently,
-> and even though the person adding them intended 2015,
-> Excel has actually used the current year (2017).
-{: .discussion}
 
 > ## Exercise: pulling hour, minute and second out of the current time ##
 > 
