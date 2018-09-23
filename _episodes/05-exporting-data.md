@@ -146,8 +146,9 @@ For the text qualifier setting, the default value is also usually the correct on
 
 > ## Challenge: Importing a CSV file ##
 > 
-> 1. Download the CSV file with a list of all countries from DataHub: https://datahub.io/core/country-list (look for "csv" under "Download")
-> 2. Import the file into Excel.
+> 1. Download the CSV file with a list of all countries from DataHub: https://datahub.io/core/country-list (go to the 'Data Files' on the web page and look for "csv" under "Download" to the right).
+> 2. To import the csv-file, go to the 'Data' tab, click `From text` and locate the csv-file that you downloaded.
+> 3. Use the info from the 'Importing CSV files' section to import it properly.
 > 
 {: .challenge}
 
