@@ -62,38 +62,32 @@ Let's try with a simple challenge.
 > (Make sure the new column is formatted as a number and not as a date.)
 {: .challenge}
 
-## Preferred date format
+Note that you *don't need to do this unless you have to*, for example that you need to export a csv-file that requires dates split, or other requirements such as the ones listed below.
 
-Instead it is much safer to store dates with [MONTH, DAY and YEAR](#day) in separate columns or as [YEAR and DAY-OF-YEAR](#doy) in separate columns.
+## Advantages of Alternative Date Formatting ##
 
 > ## Note
 > 
 > Excel is unable to parse dates from before 1899-12-31, and will thus leave these untouched.  If you’re mixing historic data from before and after this date, Excel will translate only the post-1900 dates into its internal format, thus resulting in mixed data.  If you’re working with historic data, be extremely careful with your dates!
+> If you make sure to properly format your date column, you will see when Excel fails at interpreting the date yoy write.  
+  For example, if you format the date `dd.mm.yyyy` and write 2. jul 1968, Excel will translate this to 02.07.1968, but if you
+  try writing `2. jul 1899` it will not be translated and Excel will only see it as plain text.
 > Excel also entertains a second date system, the 1904 date system, as the default in Excel for Macintosh. This system will assign a different serial number than the [1900 date system](https://support.microsoft.com/kb/180162). Because of this, [dates must be checked for accuracy when exporting data from Excel](http://datapub.cdlib.org/2014/04/10/abandon-all-hope-ye-who-enter-dates-in-excel/) (look for dates that are ~4 years off). 
 {: .callout}
 
-
-
-## Advantages of Alternative Date Formatting ##
-
 ### Storing dates as YEAR, MONTH, DAY {#day}
 
-Storing dates in YEAR, MONTH, DAY format helps remove this ambiguity. Let's look at this issue a bit closer.
-
-For instance this is a spreadsheet representing insect counts that were taken every few days over the summer, and things went something like this:
+Here is an example of someone entering dates in a column **without having formatted it for dates first**:
 
 ![So, so ambiguous, it's even confusing Excel](../fig/6_excel_dates_2.jpg)
 
+Clearly, the person logging the data intended the numbers to be the day of month instead of year!
 
-If Excel was to be believed, this person had been collecting bugs IN THE FUTURE. Now, we have no doubt this person is highly capable, but I believe time travel was beyond even his grasp.
-
-Entering dates in one cell is helpful but due to the fact that the spreadsheet programmes may interpret and save the data in different ways (doing that somewhat behind the scenes), there is a better practice.
-
-In dealing with dates in spreadsheets, we recommend separating **date data into separate fields** (day, month, year), which will eliminate any chance of ambiguity. 
+Had this person first formatted the date column, these errors would not have been so easy to let slip by.
+Storing dates in YEAR, MONTH, DAY is also an alternative, although a bit more cumbersome alternative to writing dates in one nicely formatted column.
 
 ### Storing dates as YEAR, DAY-OF-YEAR {#doy}
 
-There is also another option:  
 You can also store dates as year, and day of year (DOY). Why? Because depending on your
 question, this might be what's useful to you, and there is practically no possibility for ambiguity creeping in.
 
