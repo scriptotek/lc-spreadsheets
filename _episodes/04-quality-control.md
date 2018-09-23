@@ -115,16 +115,11 @@ If your dataset is well-structured and does not contain formulas, sorting should
 
 > ## Exercise
 >
-> Let's try this with the *Date* tab in our messy spreadsheet. Go to that tab. Select
-> **Data** then select **Sort**
+> Open a new spreadsheet on Excel and in the column `A` type in `4`, `2h`, `3h`, `5`, `4`, `6`, `1`, downward for each cell in that order.
+> Go to the 'Data' tab and switch between sorting ascending and descending by clicking AZ&darr; and the AZ&uarr;
 >
-> Sort by `date` in the order *Smallest to Largest*
->
-> ![Figure of Sorting menu](../fig/sorting.png)
->
-> - When you do this sort, do you notice anything strange?
->
-> - Try sorting by other columns. Anything strange there?
+> You see how no matter the sorting, the incorrectly entered values `2h`, `3h`, always end up at the bottom or top of the column.
+> This way you can check for values that do not follow the expected trend beacuse of improper entry.
 {: .challenge}
 
 
@@ -136,13 +131,14 @@ Conditional formatting basically can do something like color code your values by
 criteria or lowest to highest. This makes it easy to scan your data for outliers.
 
 > ## Exercise
+> In Excel, select the same column in the previous example and delete the `2h` and `3h` entries and  go to the 'Home' tab.  
+> Here you will find the button `Conditional formatting`.
+> Play around with it by holding the mouse cursor above different 'Data bars', 'Color scales' and 'Icon sets' without clicking.
+> You can also try some of the 'Highlight Cells Rules' and 'Top/Bottom' rules.
 >
-> Let's try this again with weight. Go to **Format** then **Conditional Formatting**.
+> Note that conditional formatting only works with numbers and not text.
+> 
+> PS. This coloration can be very confusing to people who do not know about conditional formatting, so make sure that if you use this functionality, comment this somewhere fitting.
 >
-> We'll do the *2-Color Scale* with Lowest to Highest for the orange colors. Then we'll
-> apply that to the `len_hours` column again. Now we can scan through and different colors will
-> stand out. Again, do we notice any strange values?
->
-> It is nice to do be able to do these scans in spreadsheets, but we also can do these
-> checks in a programming language like Python or R, or in OpenRefine or SQL.
+> PPS. To remove the formatting, select the cell or the column, click on 'Conditional formatting', go down to 'Clear rules' -> Clear rules from selected cells'.
 {: .challenge}
