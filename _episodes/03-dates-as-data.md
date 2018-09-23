@@ -9,8 +9,8 @@ objectives:
   - Describe the advantages of alternative date formatting in spreadsheets.
   - Demonstrate best practices for entering dates in spreadsheets.
 keypoints:
-  - Excel is notoriously bad at handling dates.
-  - Dates can be stored more robustly as YEAR, MONTH, DAY or YEAR, DAY-OF-YEAR in separate columns.
+  - Excel understands many ways of entering dates, but if you format date columns beforehand you can detect any confusions.
+  - Dates can alternatively be stored as YEAR, MONTH, DAY or YEAR, DAY-OF-YEAR in separate columns.
 
 authors:
   - Jez Cope
