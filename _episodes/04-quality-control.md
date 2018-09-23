@@ -122,29 +122,6 @@ If your dataset is well-structured and does not contain formulas, sorting should
 > This way you can check for values that do not follow the expected trend beacuse of improper entry.
 {: .challenge}
 
-
-## Filtering as an alternative to restructuring data ##
-
-Sometimes, rather than tidying your data by deleting rows, copying rows or making additional tables from your data, it can be more versatile to use the `Filter` functionalities of your spreadsheet program. Filtering, in addition to sorting your data, allows you to hide or show data of your choosing, for example only cells with a certain collection value.  
-
-Let's do some exercises to show what you can do with tihe filtering functionality in Excel.
-
-> ## Exercise
-> Open the 'Lending 30 days_overdue.xlsx' file with the unmerged 'Due Date' column. If you don't have it, you can download it with the unmerged column here: [Lending_30 days_overdue_unmerged.xlsx](../data/Lending _30 days_overdue_unmerged.xlsx)
-> Select the header row (the one with 'External Request Id') and click on the `Filter` button in the 'Data' tab.  
-> You should see that the header row now has a little triangle in each cell. By clicking on these triangles you get access to the functionalities of the Excel filtering.
-> You are probably already quite familiar with sorting by now, so let's try filtering on values.
->
-> 1. Click on the header 'Lending Request Status' and uncheck `Select all` and check the values you want to display.  
->   Play around and try out filtering multiple columns on the values you want.  
->   (To remove filter, click 'Clear filter from ...' in the `Filter` menu).
-> 2. Note that you have quite detailed filtering options on 'Due Date' (click the little plus sign).
-> 3. Try sorting the filtered columns.
-> 4. Try selecting a fitlered result and copy the contents into a new sheet. What happened to the content?
->
-{: .challenge}
-
-
 ## Conditional formatting ##
 
 Use with caution! But a great way to flag inconsistent values when entering data.
@@ -163,4 +140,25 @@ criteria or lowest to highest. This makes it easy to scan your data for outliers
 > PS. This coloration can be very confusing to people who do not know about conditional formatting, so make sure that if you use this functionality, comment this somewhere fitting.
 >
 > PPS. To remove the formatting, select the cell or the column, click on 'Conditional formatting', go down to 'Clear rules' -> Clear rules from selected cells'.
+{: .challenge}
+
+## Filtering as an alternative to restructuring data ##
+
+Sometimes, rather than tidying your data by deleting rows, copying rows or making additional tables from your data, it can be more versatile to use the `Filter` functionalities of your spreadsheet program. Filtering, in addition to sorting your data, allows you to hide or show data of your choosing, for example only cells with a certain collection value.  
+
+Let's do some exercises to show what you can do with tihe filtering functionality in Excel.
+
+> ## Exercise
+> Open the 'Lending 30 days_overdue.xlsx' file with the unmerged 'Due Date' column. If you don't have it, you can download it with the unmerged column here: [Lending_30 days_overdue_unmerged.xlsx](../data/Lending _30 days_overdue_unmerged.xlsx).
+> Select the header row (the one with 'External Request Id') and click on the `Filter` button in the 'Data' tab.  
+> You should see that the header row now has a little triangle in each cell. By clicking on these triangles you get access to the functionalities of the Excel filtering.
+> You are probably already quite familiar with sorting by now, so let's try filtering on values.
+>
+> 1. Click on the header 'Lending Request Status' and uncheck `Select all` and check the values you want to display.  
+>   Play around and try out filtering multiple columns on the values you want.  
+>   (To remove filter, click 'Clear filter from ...' in the `Filter` menu).
+> 2. Note that you have quite detailed filtering options on 'Due Date' (click the little plus sign).
+> 3. Try sorting the filtered columns.
+> 4. Try selecting a fitlered result and copy the contents into a new sheet. What happened to the content?
+>
 {: .challenge}
