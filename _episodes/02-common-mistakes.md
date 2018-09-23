@@ -129,9 +129,9 @@ Most spreadsheet programs accept a completely empty cell as null, so if you have
 > > 2. Copy values into the newly unmerged cells (a bit tricky):
 > >   Select the entire 'Due Date' column again.  
 > >   Go to `Home` -> `Find and Select` -> `Go to special...` -> `Blanks` and click `Ok`.  
-> >   This wil select all the blanck cells in the column. Without **selecting anything else**  
-> >   (if you do you have to do this part again, this is the tricky part), write `=`, press **arrow key down**  
-> >   and then `Ctrl`+`Enter`.
+> >   This wil select all the blanck cells in the column.  
+> >   Without **selecting anything else**  (if you do you have to do this part again, 
+> >   this is the tricky part), write `=`, press **arrow key down** and then `Ctrl`+`Enter`.
 > >   If you did this correctly, the cells in the 'Due Date' will now be unmerged and filled with dates.  
 > >   Now try sorting the table with the 'Due Date'-column and see what happens!
 > > 
