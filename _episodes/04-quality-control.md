@@ -7,10 +7,11 @@ questions:
 objectives:
   - "Apply quality assurance techniques to limit incorrect data entry."
   - "Apply quality control techniques to identify errors in spreadsheets."
+  - "Get to know filtering and its benefits."
 keypoints:
   - "Use data validation tools to minimise the possibility of input errors."
   - "Use sorting and conditional formatting to identify possibly errors."
-
+  - "Use filtering as an alternative to tidying of data."
 authors:
   - Jez Cope
   - Christie Bahlai
