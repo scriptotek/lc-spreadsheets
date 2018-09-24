@@ -39,10 +39,11 @@ Spreadsheet usage is often useful and neccessary for librarians. We can use them
 
 ### What these lessons will teach you
 
-
--¤¤FYLL INN HER NÅR OPPLEGGET ER FERDIG
-
-
+- How to enter data in a structured way
+- How to properly format data
+- How to work with dates
+- How to export and import data
+- How to sort and filter data
 ---
 
 ### What these lessons will not teach you
