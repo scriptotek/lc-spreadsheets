@@ -3,11 +3,12 @@ title: Dates as data
 teaching: 20
 exercises: 0
 questions:
-  - "How are dates handled by computers?"
+  - "How are dates handled by spreadsheet programs?"
 objectives:
-  - Describe how dates are stored and formatted in spreadsheets.
-  - Describe the advantages of alternative date formatting in spreadsheets.
-  - Demonstrate best practices for entering dates in spreadsheets.
+  - Learn how dates are formatted in spreadsheets.
+  - Learn the advantages of alternative date formatting in spreadsheets.
+  - Learn best practices for entering dates in spreadsheets.
+  - Know the advantages of preformatting date columns.
 keypoints:
   - Excel understands many ways of entering dates, but if you format date columns beforehand you can detect any confusions.
   - Dates can alternatively be stored as YEAR, MONTH, DAY or YEAR, DAY-OF-YEAR in separate columns.
@@ -69,7 +70,7 @@ Note that you *don't need to do this unless you have to*, for example that you n
 > ## Note
 > 
 > Excel is unable to parse dates from before 1899-12-31, and will thus leave these untouched.  If you’re mixing historic data from before and after this date, Excel will translate only the post-1900 dates into its internal format, thus resulting in mixed data.  If you’re working with historic data, be extremely careful with your dates!
-> If you make sure to properly format your date column, you will see when Excel fails at interpreting the date yoy write.  
+> If you make sure to properly format your date column, you will see when Excel fails at interpreting the date you write.  
   For example, if you format the date `dd.mm.yyyy` and write 2. jul 1968, Excel will translate this to 02.07.1968, but if you
   try writing `2. jul 1899` it will not be translated and Excel will only see it as plain text.
 > Excel also entertains a second date system, the 1904 date system, as the default in Excel for Macintosh. This system will assign a different serial number than the [1900 date system](https://support.microsoft.com/kb/180162). Because of this, [dates must be checked for accuracy when exporting data from Excel](http://datapub.cdlib.org/2014/04/10/abandon-all-hope-ye-who-enter-dates-in-excel/) (look for dates that are ~4 years off). 
