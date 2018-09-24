@@ -34,7 +34,7 @@ contributors:
 ## Common Spreadsheet Errors
 
 - [Multiple tables](#tables)
-- [Multiple sheets](#shets)
+- [Multiple sheets](#sheets)
 - [Header pollution](#freezing)
 - [Zero vs null](#zerovsnull)
 - [Using formatting to convey information](#formatting)
@@ -62,7 +62,7 @@ It is not easy to categorically state when it is beneficial to keep the data in 
 But what happens if you add one question (say for age) which gives you an extra column? Should you then make a new sheet for the new data? Well, no. Just add the new column to existing sheet. Excel (and other programs) have ways of dealing with **missing data**, and you get the benefit of being able to compare the rest of the old data with the new in the same sheet.  
 But what if you add two new questions, and maybe remove one, what then? Again, it is difficult to give a categorical answer, but if you see that the new data is **structurally too different**, i.e. have to many unshared columns, then you should place it in **a new sheet**.
 
-## Header pollution {#freeze}
+## Header pollution {#freezing}
 Sometimes the title headers of columns can get confused into the data analysis itself (for example sorting or summarizing). 
 If you want to keep an overview of the column names in large datasets, you can freeze the column headers, so that they are visible at the top of thee screen no matter how far you scroll down.  
 
