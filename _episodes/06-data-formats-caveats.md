@@ -45,15 +45,6 @@ If you want to store your data in `*.csv` and expect that your data may contain 
 	
 However, if you are working with already existing dataset in which the data values are not included in "" and but which have commas as both delimiters and parts of data values, you are potentially facing a major problem with **data cleaning**.
 
-> ## Challenge: Importing a CSV file ##
-> 
-> 1. Download the CSV file with the bad formatting (missing quotes) [incorrectly_formatted.csv](../data/incorrectly_formatted.csv)
-> 2. Like in the previous lesson (Importing and exporting data), to import the csv-file, go to the 'Data' tab, click `From text` and locate the csv-file that you downloaded.
-> 3. Use the info from the 'Importing CSV files' section in the previous lesson and see how it ends up looking.
-> 4. Delete the imported data from Excel and open the csv-file in a text editor (like Notepad), try adding quotation marks around the title with commas and re-import. How does it look now?
-> 
-{: .challenge}
-
 If the dataset you're dealing with contains hundreds or thousands of records, cleaning them up manually, might not only to take hours and hours, but may potentially end up with you accidentally introducing errors.
 
-Cleaning up datasets is one of major problems in many scientific disciplines. The approach almost always depends on the particular context. However, it is a good practice to clean the data in an automated fashion, for example by writing and running a script. Other lessons in Data Carpentry covering shell, Python and R will give you the basis for developing skills to build relevant scripts.
+Cleaning up datasets is one of major problems in many scientific disciplines. The approach almost always depends on the particular context. However, it is a good practice to clean the data in an automated fashion, for example by writing and running a script. Other lessons in Library Carpentry covering shell, Python and R will give you the basis for developing skills to build relevant scripts.
